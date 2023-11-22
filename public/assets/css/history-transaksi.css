@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f6f7fb;
+}
+
+/*Colors palette*/
+.history-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e5e7e9;
+}
+
+.history-item:first-child {
+  padding-top: 0;
+}
+
+.history-item .head-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.history-item .head-item div {
+  color: #535353;
+  font-size: 12px;
+}
+
+.history-item .head-item div:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.history-item .head-item .date {
+  font-weight: 300;
+}
+
+.history-item .head-item .id-transaksi {
+  font-weight: 300;
+}
+
+.history-item .body-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.history-item .body-item .image-item {
+  width: 100%;
+  height: 100%;
+  max-width: 86px;
+}
+
+.history-item .body-item .image-item img {
+  width: 100%;
+  height: 100%;
+  max-width: 86px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+}
+
+.history-item .body-item .detail-item {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.history-item .body-item .detail-item .name-item {
+  display: block;
+  position: relative;
+  font-weight: 300;
+  color: #535353;
+  text-decoration: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.history-item .body-item .detail-item .price {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #535353;
+}
+
+.history-item .body-item .detail-item .action-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.history-item .body-item .detail-item .action-item button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.modal-detail .modal-dialog {
+  max-width: 500px;
+}
+
+.modal-detail .modal-dialog .modal-content {
+  border: none;
+  border-radius: 10px;
+}
+
+.modal-detail .modal-dialog .modal-content .modal-header {
+  border: none;
+}
+
+.modal-detail .modal-dialog .modal-content .modal-header .modal-title {
+  color: #535353;
+  font-weight: 600;
+}
+
+.modal-detail .modal-dialog .modal-content .modal-body .line-detail {
+  border-bottom: 1px solid #e5e7e9;
+  padding: 1rem 0;
+}
+
+.modal-detail .modal-dialog .modal-content .modal-body .line-detail h5 {
+  font-weight: 400;
+  color: #535353;
+  margin-bottom: 1rem;
+}
+
+.modal-detail .modal-dialog .modal-content .modal-body .line-detail table tbody tr td {
+  font-weight: 300;
+  color: #535353;
+  padding: .2rem 0;
+  width: 50%;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.modal-detail .modal-dialog .modal-content .modal-body .line-detail table tbody tr td:last-child {
+  text-align: end;
+}
+
+.modal-detail .modal-dialog .modal-content .modal-body .line-detail table tbody tr td.primary-text {
+  font-weight: 600;
+}
+
+.modal-tracking .modal-dialog {
+  max-width: 900px;
+}
+
+.modal-tracking .modal-dialog .modal-content {
+  border: none;
+  border-radius: 10px;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-header {
+  border: none;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  padding: 1rem 2rem;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-header .modal-title {
+  color: #535353;
+  font-weight: 600;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .detail-tracking {
+  color: #535353;
+  padding: 5rem 2rem 1rem 2rem;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .detail-tracking .line-tracking:not(:first-child) {
+  padding: .7rem 0 !important;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .detail-tracking .line-tracking .title-detail {
+  font-weight: 300;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .detail-tracking .line-tracking.number-tracking {
+  border-bottom: 1px solid #e5e7e9;
+  padding-bottom: 1rem;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .detail-tracking h4 {
+  font-size: 18px;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .detail-tracking .address {
+  font-weight: 300;
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .process-tracking {
+  background-color: #F3F4F5;
+  padding: 5rem 2rem 1rem 2rem;
+  border-radius: 0 10px 10px 0;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .process-tracking .tracking-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .process-tracking .tracking-images img {
+  width: 100%;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .process-tracking .status {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .process-tracking .status span {
+  font-weight: 500;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .tracking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .tracking .date {
+  font-weight: 300;
+  width: 150px;
+  color: #535353;
+  text-align: end;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .tracking .name-process {
+  font-weight: 300;
+  width: 150px;
+  color: #535353;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .tracking .process-track {
+  position: relative;
+  padding: 0 1rem;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .tracking .process-track .bullets-track {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #A5A6A9;
+  position: relative;
+  top: 2px;
+  z-index: 2;
+  -webkit-box-shadow: 0 0 0 4px var(--N75, #E5E7E9);
+          box-shadow: 0 0 0 4px var(--N75, #E5E7E9);
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .tracking .process-track .bullets-track.now-proccess {
+  background-color: #2DB878;
+  -webkit-box-shadow: 0 0 0 4px var(--G200, #D6FFDE);
+          box-shadow: 0 0 0 4px var(--G200, #D6FFDE);
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .tracking .process-track .line-track {
+  width: 1px;
+  min-height: 50px;
+  border: 2px dashed #A5A6A9;
+  position: relative;
+  left: 7px;
+}
+
+.modal-tracking .modal-dialog .modal-content .modal-body .tracking:last-child .line-track {
+  display: none;
+}
+
+.modal-rating .star-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.modal-rating .star-wrapper .star-rating {
+  direction: rtl;
+  display: inline-block;
+  cursor: default;
+}
+
+.modal-rating .star-wrapper .star-rating input[type="radio"] {
+  display: none;
+}
+
+.modal-rating .star-wrapper .star-rating label {
+  color: #ebe8e8;
+  font-size: 2rem;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-rating .star-wrapper .star-rating label:hover,
+.modal-rating .star-wrapper .star-rating label:hover ~ label,
+.modal-rating .star-wrapper .star-rating input[type="radio"]:checked ~ label {
+  color: #f2b600;
+}
+
+@media screen and (max-width: 767px) {
+  .history-item .head-item div {
+    font-size: 12px;
+  }
+  .history-item .body-item .detail-item .name-item {
+    font-size: 14px;
+  }
+  .history-item .body-item .detail-item .price {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .history-item .head-item div {
+    font-size: 10px;
+  }
+  .history-item .head-item .icon img {
+    max-width: 26px;
+  }
+  .history-item .body-item .image-item {
+    max-width: 54px;
+  }
+  .history-item .body-item .image-item img {
+    max-width: 54px;
+  }
+  .history-item .body-item .detail-item .name-item {
+    font-size: 12px;
+  }
+  .history-item .body-item .detail-item .price {
+    font-size: 12px;
+  }
+  .modal-detail .modal-dialog .modal-content .modal-body .line-detail h5 {
+    font-size: 18px;
+  }
+  .modal-detail .modal-dialog .modal-content .modal-body .line-detail table tbody tr td {
+    font-size: 14px;
+  }
+  .modal-tracking .modal-dialog .modal-content .modal-body .detail-tracking .line-tracking .title-detail {
+    font-size: 12px;
+  }
+  .modal-tracking .modal-dialog .modal-content .modal-body .detail-tracking h4 {
+    font-size: 16px;
+  }
+  .modal-tracking .modal-dialog .modal-content .modal-body .detail-tracking .address {
+    font-size: 12px;
+  }
+  .modal-tracking .modal-dialog .modal-content .modal-body .process-tracking {
+    border-radius: 0 0 10px 10px;
+  }
+  .modal-tracking .modal-dialog .modal-content .modal-body .process-tracking .status {
+    font-size: 14px;
+  }
+  .modal-tracking .modal-dialog .modal-content .modal-body .tracking .date {
+    font-size: 12px;
+  }
+  .modal-tracking .modal-dialog .modal-content .modal-body .tracking .name-process {
+    font-size: 12px;
+  }
+  .modal-tracking .modal-dialog .modal-content .modal-body .tracking .process-track .bullets-track {
+    width: 14px;
+    height: 14px;
+    top: 2px;
+  }
+  .modal-tracking .modal-dialog .modal-content .modal-body .tracking .process-track .line-track {
+    width: 1px;
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .history-item .body-item .image-item {
+    max-width: 44px;
+  }
+  .history-item .body-item .image-item img {
+    max-width: 44px;
+  }
+  .history-item .body-item .detail-item .action-item button {
+    font-size: 10px;
+  }
+  .history-item .body-item .detail-item .action-item button:not(:last-child) {
+    margin-right: .5rem;
+  }
+}
+/*# sourceMappingURL=history-transaksi.css.map */

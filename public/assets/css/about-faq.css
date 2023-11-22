@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f6f7fb;
+}
+
+/*Colors palette*/
+#mainContent {
+  margin-top: 94px;
+}
+
+#mainContent .banner-title {
+  background: url(/dist/assets/img/background-content.png);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 50vh;
+  background-position: bottom;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mainContent .banner-title .title {
+  margin-bottom: .5rem;
+  color: #535353;
+}
+
+#mainContent .banner-title .breadchumb-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+#mainContent .banner-title .breadchumb-wrapper a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #535353;
+}
+
+#mainContent .banner-title .breadchumb-wrapper span {
+  padding: .0 4px;
+}
+
+#mainContent .banner-title .breadchumb-wrapper p {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 991px) {
+  #mainContent {
+    margin-top: 148px;
+  }
+}
+
+.faq-section {
+  padding: 4rem 0;
+}
+
+.faq-section .illustration svg {
+  width: 100%;
+}
+
+.faq-section .wrapper-faq .titleAccordion {
+  color: #535353;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 1.4rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.faq-section .wrapper-faq .titleAccordion::before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 50%;
+  background-color: #2DB878;
+  position: absolute;
+  bottom: -5px;
+  border-radius: 2px;
+}
+
+.faq-section .wrapper-faq .accordion .accordion-item {
+  background-color: transparent !important;
+  border-bottom: 1px dashed #535353;
+}
+
+.faq-section .wrapper-faq .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: transparent !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 1rem 0;
+  font-size: 18px;
+  color: #535353;
+}
+
+.faq-section .wrapper-faq .accordion .accordion-item .accordion-header .accordion-button ion-icon {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-transform: rotate(180deg) !important;
+          transform: rotate(180deg) !important;
+}
+
+.faq-section .wrapper-faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: #2DB878;
+}
+
+.faq-section .wrapper-faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) ion-icon {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-transform: rotate(0deg) !important;
+          transform: rotate(0deg) !important;
+}
+
+.faq-section .wrapper-faq .accordion .accordion-item .accordion-header .accordion-button::after {
+  display: none;
+}
+
+.faq-section .wrapper-faq .accordion .accordion-item .accordion-collapse .accordion-body {
+  font-size: 14px;
+  padding: 0 0 1rem 0;
+  color: #535353;
+}
+
+@media screen and (max-width: 576px) {
+  .faq-section .wrapper-faq .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 14px;
+  }
+  .faq-section .wrapper-faq .accordion .accordion-item .accordion-collapse .accordion-body {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=about-faq.css.map */

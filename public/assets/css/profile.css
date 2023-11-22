@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*Colors palette*/
+.profile-data .profile-images-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-data .profile-images-wrapper .profile-image {
+  margin-bottom: 1rem;
+}
+
+.profile-data .profile-images-wrapper .profile-image img {
+  width: 100%;
+  height: 100%;
+  max-width: 164px;
+  max-height: 164px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.profile-data .profile-images-wrapper .button-change-image {
+  margin-bottom: 1rem;
+}
+
+.profile-data .profile-images-wrapper .button-change-image .button {
+  display: block;
+}
+
+.profile-data .profile-images-wrapper .info {
+  color: #535353;
+  font-weight: 300;
+  text-align: center;
+  font-size: 12px;
+}
+
+.profile-data .title-data-user {
+  margin-bottom: 1rem;
+  color: #535353;
+}
+
+.profile-data .biodata-user {
+  margin-bottom: 1.4rem;
+}
+
+.profile-data .biodata-user .table-data-user table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.profile-data .biodata-user .table-data-user table tbody tr {
+  border-width: 0 0 8px 0;
+  border-color: transparent;
+}
+
+.profile-data .biodata-user .table-data-user table tbody tr td {
+  font-weight: 300;
+  color: #535353;
+  font-size: 14px;
+}
+
+.profile-data .address-user p {
+  font-size: 14px;
+  color: #535353;
+  font-weight: 300;
+  max-width: 400px;
+}
+
+.profile-data .change-password .greetings {
+  font-weight: 300;
+}
+
+.profile-data .change-password .greetings p {
+  font-size: 16px;
+}
+
+.profile-data .change-password .greetings p .name {
+  font-weight: 500;
+}
+
+.profile-data .change-password .greetings p .text-dark {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+  .profile-data .profile-images-wrapper .profile-image img {
+    max-width: 124px;
+    max-height: 124px;
+  }
+  .profile-data .title-data-user {
+    font-size: 16px !important;
+  }
+  .profile-data .biodata-user .table-data-user table tbody tr td {
+    font-size: 12px;
+  }
+  .profile-data .address-user p {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=profile.css.map */
+
+
+body{
+    background-color: #f8f9fa !important;
+}
+
+.container .panel{
+    column-gap: 50px;
+    display: flex;
+    margin: 50px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .panel .col-3{
+    background-color: #ffffff !important;
+    border-radius: 15px;
+    height: min-content;
+    padding-bottom: 20px;
+    box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.04), 0px 0.835552px 25.0666px rgba(0, 0, 0, 0.0287542), 0px 0.446726px 13.4018px rgba(0, 0, 0, 0.0238443), 0px 0.250431px 7.51293px rgba(0, 0, 0, 0.02), 0px 0.133002px 3.99006px rgba(0, 0, 0, 0.0161557), 0px 0.0553451px 1.66035px rgba(0, 0, 0, 0.0112458);
+}
+
+.container .panel .col-3 .card-title{
+    display: flex;
+    column-gap: 10px;
+    padding: 25px 20px 0 30px;
+    margin-bottom: -5px;
+}
+.card-title p{
+    margin-top: 7px;
+    font-weight: 600;
+}
+
+.container .panel .col-3 .card-body{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 30px;
+}
+.card-body .list{
+    display: flex;
+    column-gap: 10px;
+    transition: 0.5s;
+}
+
+.card-body .list:hover{
+    column-gap: 25px;
+    cursor: pointer;
+}
+
+.card-body .list a{
+  color: black;
+  text-decoration: none;
+  margin: 8px 0;
+}
+
+.card-body .list svg{
+  margin: 8px 0;
+}
+
+.container .panel .col-8{
+    background-color: #ffffff !important;
+    border-radius: 15px;
+    box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.04), 0px 0.835552px 25.0666px rgba(0, 0, 0, 0.0287542), 0px 0.446726px 13.4018px rgba(0, 0, 0, 0.0238443), 0px 0.250431px 7.51293px rgba(0, 0, 0, 0.02), 0px 0.133002px 3.99006px rgba(0, 0, 0, 0.0161557), 0px 0.0553451px 1.66035px rgba(0, 0, 0, 0.0112458);
+}
+
+.col-8 .tab {
+  overflow: hidden;
+  border-bottom: 1px solid #535353;
+  border-radius: 15px 15px 0 0;
+}
+
+.tab button {
+  float: left;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 40px;
+  transition: 0.5s;
+  font-size: 17px;
+  border-bottom: 2px solid transparent;
+}
+
+.tab button:hover {
+  border-bottom: 2px solid #2db878;
+}
+
+.tab button.active {
+  color: #2db878;
+  border-bottom: 2px solid #2db878;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  border-radius: 20px;
+}
+
+.tabcontent .content{
+    padding: 20px 15px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.tabcontent .content .left{
+    width: 30%;
+    text-align: center;
+}
+
+.tabcontent .content .left img{
+    width: 100%;
+}
+
+.tabcontent .content .left button{
+    margin: 10px 0;
+    width: 100%;
+}
+
+.tabcontent .content .left small{
+    margin: auto;
+    font-size: 11px;
+    width: 100%;
+}
+
+.tabcontent .content .right{
+    width: 65%;
+}
+
+.right .right-top{
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+.right .right-bottom{
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+#security{
+    padding: 20px;
+}
+
+@media screen and (max-width: 991px){
+    .container .panel{
+        column-gap: 20px;
+    }
+
+    .container .panel .col-3{
+        padding: 20px;
+        width: 190px;
+    }
+
+    .container .panel .col-3 .card-title{
+        padding: 0;
+    }
+
+    .container .panel .col-3 .card-body{
+        padding: 0;
+    }
+
+    .tabcontent .content{
+        padding: 0;
+        column-gap: 15px;
+    }
+
+    .tabcontent {
+    padding: 12px 12px;
+    }
+
+    .tabcontent .content .right{
+        width: 65%;
+    }
+
+    .tabcontent .content .left small{
+        font-size: 9px;
+    }
+
+    .right .right-top .spacing{
+        text-indent: 30px;
+    }
+
+    .right .right-bottom{
+        margin-top: 30px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container .panel{
+        flex-direction: column-reverse;
+        row-gap: 30px;
+        margin: 50px 0;
+        justify-content: center;
+    }
+
+    .container .panel .col-3{
+        padding: 20px;
+        width:70%;
+        margin: auto;
+    }
+
+    .container .panel .col-8{
+        width:100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tabcontent .content{
+        flex-direction: column;
+    }
+
+    .tabcontent .content .left{
+        display: flex;
+    }
+
+    .tabcontent .content .left img{
+        width: 200px;
+    }
+
+    .tabcontent .content .left button{
+        margin: 40px 20px 20px 20px;
+        width: auto;
+        height: 50px;
+        padding: 0 40px;
+    }
+
+    .tabcontent .content .left small{
+        font-size: 11px;
+        margin: 90px 0 0 -160px !important;
+        min-width: 150px !important;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .tabcontent .content .left small{
+        display: none;
+    }
+
+    .tabcontent .content .left button{
+        margin: 140px 0 0 -40px;
+        width: auto;
+        height: 50px;
+        padding: 5px 10px;
+        box-shadow: 0 0 10px #535353;
+    }
+
+    .tabcontent .content .right{
+        width: 100%;
+    }
+
+    .tabcontent .content .left{
+        width: 100%;
+        margin: 0;
+    }
+
+    .tab button {
+        float: left;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 20px;
+        transition: 0.5s;
+        font-size: 17px;
+        border-bottom: 2px solid transparent;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .container .panel .col-3{
+        padding: 20px;
+        width:90%;
+        margin: auto;
+    }
+}

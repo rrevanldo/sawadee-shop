@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*------------
+Resset Css
+------------*/
+*,
+::after,
+::before,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f6f7fb;
+}
+
+/*Colors palette*/
+.titleForm {
+    font-weight: 600;
+    color: #535353;
+    margin-bottom: 1.5rem;
+}
+
+.checkout-container h4 {
+    margin-bottom: 1rem;
+    color: #535353;
+}
+
+.checkout-container .nav-tabs {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.paymentConfirmation .detail-customer {
+    padding: 0 0 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.paymentConfirmation .detail-customer h5,
+.paymentConfirmation .detail-customer p {
+    color: #535353;
+}
+
+.paymentConfirmation .detail-customer h5 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+}
+
+.paymentConfirmation .detail-customer p {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.paymentConfirmation .shipping-methode {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.paymentConfirmation .shipping-methode h5,
+.paymentConfirmation .shipping-methode p {
+    color: #535353;
+}
+
+.paymentConfirmation .shipping-methode h5 {
+    font-size: 18px;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+}
+
+.paymentConfirmation .shipping-methode p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.paymentConfirmation .shipping-methode .wrapper-select-methode {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.paymentConfirmation
+    .shipping-methode
+    .wrapper-select-methode
+    .methode
+    input[type="radio"] {
+    display: none;
+}
+
+.paymentConfirmation
+    .shipping-methode
+    .wrapper-select-methode
+    .methode
+    input:checked
+    ~ label {
+    border-color: #2db878;
+}
+
+.paymentConfirmation
+    .shipping-methode
+    .wrapper-select-methode
+    .methode
+    input:checked
+    ~ label
+    .name-shipping-methode
+    ion-icon {
+    color: #2db878;
+}
+
+.paymentConfirmation
+    .shipping-methode
+    .wrapper-select-methode
+    .methode
+    input:checked
+    ~ label
+    .name-shipping-methode
+    h6 {
+    color: #2db878;
+}
+
+.paymentConfirmation
+    .shipping-methode
+    .wrapper-select-methode
+    .methode
+    input:checked
+    ~ label
+    .price-methode {
+    color: #2db878;
+}
+
+.paymentConfirmation .shipping-methode .wrapper-select-methode .methode label {
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.paymentConfirmation
+    .shipping-methode
+    .wrapper-select-methode
+    .methode
+    label
+    .name-shipping-methode {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.paymentConfirmation
+    .shipping-methode
+    .wrapper-select-methode
+    .methode
+    label
+    .name-shipping-methode
+    ion-icon {
+    margin-right: 0.5rem;
+    color: #535353;
+    font-size: 18px;
+}
+
+.paymentConfirmation
+    .shipping-methode
+    .wrapper-select-methode
+    .methode
+    label
+    .name-shipping-methode
+    h6 {
+    color: #535353;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.paymentConfirmation
+    .shipping-methode
+    .wrapper-select-methode
+    .methode
+    label
+    .price-methode {
+    padding: 0.5rem 0 2px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    color: #535353;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+}
+
+.paymentConfirmation
+    .shipping-methode
+    .wrapper-select-methode
+    .methode
+    label
+    .desc-methode {
+    color: #535353;
+    font-size: 12px;
+    padding: 0.5rem 0 0 0;
+    margin: 0;
+    font-style: italic;
+}
+
+.paymentConfirmation .shipping-detail {
+    padding: 1.5rem 0;
+}
+
+.paymentConfirmation .shipping-detail h5,
+.paymentConfirmation .shipping-detail p {
+    color: #535353;
+}
+
+.paymentConfirmation .shipping-detail h5 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.paymentConfirmation .shipping-detail p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.paymentConfirmation .shipping-detail .wrapper-item .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.paymentConfirmation .shipping-detail .wrapper-item .item .images-item {
+    margin-right: 0.5rem;
+}
+
+.paymentConfirmation .shipping-detail .wrapper-item .item .images-item img {
+    width: 100%;
+    height: 100%;
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.paymentConfirmation .shipping-detail .wrapper-item .item .detail-item h6,
+.paymentConfirmation .shipping-detail .wrapper-item .item .detail-item h5 {
+    color: #535353;
+}
+
+.paymentConfirmation .shipping-detail .wrapper-item .item .detail-item h5 {
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+}
+
+.paymentConfirmation .shipping-detail .wrapper-item .item .detail-item h6 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.wrapper-summary {
+    position: relative;
+}
+
+.wrapper-summary .card {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 85px rgba(20, 40, 63, 0.1);
+    box-shadow: 0px 0px 85px rgba(20, 40, 63, 0.1);
+}
+
+.wrapper-summary .card h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #535353;
+    position: relative;
+}
+
+.wrapper-summary .card h4::after {
+    content: "";
+    display: block;
+    width: 25%;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border-radius: 10px;
+    background-color: #1a1d20;
+    height: 2px;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+}
+
+.wrapper-summary .card .detail-summary {
+    padding: 1rem 0;
+}
+
+.wrapper-summary .card .dropdown {
+    position: relative;
+}
+
+.wrapper-summary .card .dropdown .dropdown-menu {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    min-width: auto;
+    width: 100%;
+    padding: 0;
+}
+
+.wrapper-summary .card .dropdown .dropdown-menu .dropdown-item {
+    padding: 0.5rem 0.5rem;
+}
+
+.wrapper-summary
+    .card
+    .dropdown
+    .dropdown-menu
+    .dropdown-item:not(:last-child) {
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.wrapper-summary .card .dropdown .dropdown-menu .dropdown-item:focus {
+    background-color: #fff;
+    color: #535353;
+}
+
+.wrapper-summary .card .dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #ededed;
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+    border: none;
+    color: #535353;
+}
+
+.modal .modal-header {
+    padding: 1rem 1.5rem;
+}
+
+.modal .modal-header .modal-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.modal .modal-body {
+    padding: 1.5rem;
+}
+
+.modalManualTransfer .modal-body .button {
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    -webkit-box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.04),
+        0px 0.83555px 25.0666px rgba(0, 0, 0, 0.0287542),
+        0px 0.44673px 13.4018px rgba(0, 0, 0, 0.0238443),
+        0px 0.25043px 7.51293px rgba(0, 0, 0, 0.02),
+        0px 0.133px 3.99006px rgba(0, 0, 0, 0.0161557),
+        0px 0.05535px 1.66035px rgba(0, 0, 0, 0.0112458);
+    box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.04),
+        0px 0.83555px 25.0666px rgba(0, 0, 0, 0.0287542),
+        0px 0.44673px 13.4018px rgba(0, 0, 0, 0.0238443),
+        0px 0.25043px 7.51293px rgba(0, 0, 0, 0.02),
+        0px 0.133px 3.99006px rgba(0, 0, 0, 0.0161557),
+        0px 0.05535px 1.66035px rgba(0, 0, 0, 0.0112458);
+    padding: 0.7rem;
+}
+
+.modalManualTransfer .modal-body .button .icon-name {
+    font-size: 14px;
+}
+
+.modalManualTransfer .modal-body .button .icon-name .icon img {
+    width: 100% !important;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.nextStepModalManualPayment .back-modal ion-icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nextStepModalManualPayment .modal-body {
+    font-size: 14px;
+}
+
+.nextStepModalManualPayment .modal-body .card {
+    -webkit-box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.04),
+        0px 0.83555px 25.0666px rgba(0, 0, 0, 0.0287542),
+        0px 0.44673px 13.4018px rgba(0, 0, 0, 0.0238443),
+        0px 0.25043px 7.51293px rgba(0, 0, 0, 0.02),
+        0px 0.133px 3.99006px rgba(0, 0, 0, 0.0161557),
+        0px 0.05535px 1.66035px rgba(0, 0, 0, 0.0112458);
+    box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.04),
+        0px 0.83555px 25.0666px rgba(0, 0, 0, 0.0287542),
+        0px 0.44673px 13.4018px rgba(0, 0, 0, 0.0238443),
+        0px 0.25043px 7.51293px rgba(0, 0, 0, 0.02),
+        0px 0.133px 3.99006px rgba(0, 0, 0, 0.0161557),
+        0px 0.05535px 1.66035px rgba(0, 0, 0, 0.0112458);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.nextStepModalManualPayment .modal-body .card .card-head {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 0 0 1rem 0;
+}
+
+.nextStepModalManualPayment .modal-body .card .card-head img {
+    width: 100%;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.nextStepModalManualPayment .modal-body .card .card-body {
+    padding: 1rem 0;
+}
+
+.nextStepModalManualPayment .modal-body .card .card-body ul {
+    padding-left: 0.7rem;
+    margin: 0;
+}
+
+.nextStepModalManualPayment .modal-body .card .card-body ul li {
+    padding: 0;
+}
+
+.nextStepModalManualPayment
+    .modal-body
+    .card
+    .card-body
+    ul
+    li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.nextStepModalManualPayment .modal-body .card .card-body ul li::marker {
+    color: #2db878;
+}
+
+.nextStepModalManualPayment .modal-body .proof-payment p {
+    margin-bottom: 0.5rem;
+}
+
+.nextStepModalManualPayment .modal-body .proof-payment input {
+    display: none;
+}
+
+.nextStepModalManualPayment .modal-body .proof-payment label {
+    width: 100%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.nextStepModalManualPayment .modal-body .proof-payment label .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.nextStepModalManualPayment .modal-body .proof-payment label .card ion-icon {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 576px) {
+    .modalManualTransfer .modal-body .button .icon-name {
+        font-size: 12px;
+    }
+}
+/*# sourceMappingURL=checkout.css.map */

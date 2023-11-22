@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*------------
+Resset Css
+------------*/
+*,
+::after,
+::before,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Colors palette*/
+textarea:focus,
+input[type="text"]:focus,
+input[type="username"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: #1a1d20;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(78, 74, 74, 0.25);
+    outline: 1 none;
+}
+
+#auth {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#auth .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    padding: 5rem 2rem 2rem 2rem;
+}
+
+#auth .wrapper .authForm {
+    width: 100%;
+    max-width: 600px;
+    background: #f6f7fb;
+    -webkit-box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.0278729),
+        0px 0.60294px 18.0882px rgba(0, 0, 0, 0.04),
+        0px 0.25043px 7.51293px rgba(0, 0, 0, 0.0521271),
+        0px 0.09058px 2.71728px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.0278729),
+        0px 0.60294px 18.0882px rgba(0, 0, 0, 0.04),
+        0px 0.25043px 7.51293px rgba(0, 0, 0, 0.0521271),
+        0px 0.09058px 2.71728px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    padding: 1rem 2rem;
+}
+
+#auth .wrapper .authForm form .headForm {
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+    color: #535353;
+}
+
+#auth .wrapper .authForm form .headForm h1 {
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+}
+
+#auth .wrapper .authForm form .bodyForm {
+    color: #535353;
+}
+
+#auth .wrapper .authForm form .bodyForm .inputForm {
+    position: relative;
+}
+
+#auth .wrapper .authForm form .bodyForm .inputForm .icon {
+    position: absolute;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: 15px;
+}
+
+#auth .wrapper .authForm form .bodyForm .inputForm .icon label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#auth .wrapper .authForm form .bodyForm .inputForm .icon label img {
+    width: 100%;
+    max-width: 18px;
+}
+
+#auth .wrapper .authForm form .bodyForm .inputForm .form-control {
+    background: transparent;
+    border: 1px solid rgba(124, 122, 122, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem 3rem;
+    position: relative;
+    font-weight: 300;
+}
+
+#auth .wrapper .authForm form .bodyForm .inputForm .wrapperToggle {
+    position: absolute;
+    right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    z-index: 3;
+}
+
+#auth .wrapper .authForm form .bodyForm .inputForm .wrapperToggle i {
+    font-size: 18px;
+}
+
+#auth .wrapper .authForm form .bodyForm .link {
+    text-align: end;
+}
+
+#auth .wrapper .authForm form .bodyForm .link a {
+    color: #535353;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+#auth .wrapper .authForm form .bodyForm .wrapperButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#auth .wrapper .authForm form .bodyForm .wrapperButton .button {
+    background: #1a1d20;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    max-width: 300px;
+    padding: 0.7rem 1rem;
+    border-radius: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+#auth .wrapper .authForm form .bodyForm .toSignUppage {
+    text-align: center;
+    font-weight: 300;
+}
+
+#auth .wrapper .authForm form .bodyForm .toSignUppage a {
+    text-decoration: underline;
+    color: #535353;
+}
+
+@media screen and (max-width: 576px) {
+    .bodyForm {
+        font-size: 12px !important;
+    }
+    .bodyForm .inputForm .form-control {
+        font-size: 12px !important;
+    }
+}
+/*# sourceMappingURL=auth.css.map */
