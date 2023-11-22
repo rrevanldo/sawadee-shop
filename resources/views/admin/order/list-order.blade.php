@@ -2,18 +2,18 @@
 
 @section('dashboard')
     <div class="card">
-        <h5 class="card-header">Semua Orderan Pengguna</h5>
+        <h5 class="card-header">All User's Orders</h5>
         <div class="table-responsive text-nowrap">
             <table class="table table-hover">
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Nama</th>
-                        <th>Alamat</th>
-                        <th>Nomor Telepon</th>
-                        <th>Bukti Pembayaran</th>
-                        <th>Produk / Kategori</th>
-                        <th>Aksi</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Phone Number/th>
+                        <th>Transfer Receipt</th>
+                        <th>Product / Category</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody class="table-border-bottom-0">
@@ -24,7 +24,7 @@
                             <td>{{ $orders->adress }}</td>
                             <td>{{ $orders->phone }}</td>
                             <td>
-                                <a href="/dashboard/detailpembayaran/{{$orders->id}}"><button class="btn btn-primary" style="color: white">Detail</button></a>
+                                <a href="/dashboard/detailpembayaran/{{$orders->id}}"><button class="btn btn-primary" style="background-color: #AEDEFC; color: black;">Detail</button></a>
                             </td>
                             <td>{{ $orders->product }} / {{ $orders->category }}</td>
                             <td>

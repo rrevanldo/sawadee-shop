@@ -146,7 +146,7 @@
                                         <div></div>
                                     @else
                                         <a href="/login" class="button btn-outline-info">Login</a>
-                                        <a href="/register" class="button btn-outline-info">Sign Up</a>
+                                        <a href="/register" class="button btn-outline-info">Register</a>
                                     @endauth
                                 @endif
                             </div>

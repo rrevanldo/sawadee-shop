@@ -78,6 +78,7 @@ input[type="color"]:focus,
         0px 0.09058px 2.71728px rgba(0, 0, 0, 0.08);
     border-radius: 15px;
     padding: 1rem 2rem;
+    margin-top: -60px;
 }
 
 #auth .wrapper .authForm form .headForm {
@@ -175,6 +176,47 @@ input[type="color"]:focus,
 }
 
 #auth .wrapper .authForm form .bodyForm .wrapperButton .button {
+    /* width: 6.5em; */
+    height: 2.3em;
+    margin: 0.5em;
+    background: #AEDEFC;
+    color: black;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+   }
+   
+button:hover {
+    color: #AEDEFC;
+   }
+   
+button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
+/* #auth .wrapper .authForm form .bodyForm .wrapperButton .button {
     background: #1a1d20;
     color: #fff;
     font-weight: 600;
@@ -185,7 +227,7 @@ input[type="color"]:focus,
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none;
-}
+} */
 
 #auth .wrapper .authForm form .bodyForm .toSignUppage {
     text-align: center;

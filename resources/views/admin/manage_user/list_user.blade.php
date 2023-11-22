@@ -2,18 +2,18 @@
 
 @section('dashboard')
     <div class="card">
-        <h5 class="card-header">Semua Pengguna</h5>
+        <h5 class="card-header">All User</h5>
         <div class="table-responsive text-nowrap">
             <table class="table table-hover">
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Nama</th>
+                        <th>Name</th>
                         <th>Email</th>
-                        <th>Alamat</th>
-                        <th>Nomor Telepon</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
                         <th>Status</th>
-                        <th>Aksi</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody class="table-border-bottom-0">
@@ -35,7 +35,7 @@
                                 <form method="POST" action="{{ route('users.delete', $users->id) }}">
                                     @method('DELETE')
                                     @csrf
-                                    <button class="btn btn-danger" type="submit"><i class="bx bx-trash me-1"></i>Hapus</button>
+                                    <button class="btn btn-danger" type="submit"><i class="bx bx-trash me-1"></i>Delete</button>
                                 </form>
                             </td>
                         </tr>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SH</title>
+    <title>SawadeeShop</title>
+    <link rel="icon" href="./assets/img/logoSS.png"">
 
     <!--Bootstrap Css-->
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -29,7 +30,7 @@
                     <div class="leftSideNavbar">
                         <div class="text-logo">
                             <a href="/show" class="text-dark text-decoration-none">
-                                <h1 class="me-3">SH</h1>
+                                <h1 class="me-3"><img src="../../assets/img/logoSS.png" width="160px"></h1>
                             </a>
                         </div>
                     </div>
@@ -39,7 +40,7 @@
                             <div class="cartWrapper">
                                 <a href="/cart" class="cart icon">
                                     <img src="./assets/img/icon/shopping-cart_icon.svg" alt="">
-                                    <div class="totalItem">0</div>
+                                    <div class="totalItem" style="background-color: #AEDEFC; color: black;">0</div>
                                 </a>
                             </div>
                         </div>
@@ -61,15 +62,15 @@
                                <div class="menu-profile">
                                     <a href="/profile" class="menu">
                                         <ion-icon name="person"></ion-icon>
-                                        Akun
+                                        Account
                                     </a>
                                     <a href="/history" class="menu">
                                         <ion-icon name="cart"></ion-icon>
-                                        Riwayat Transaksi
+                                        Transaction History
                                     </a>
                                     <a href="{{route('logout')}}" class="menu logout">
                                         <ion-icon name="log-out"></ion-icon>
-                                        Keluar
+                                        Back
                                     </a>
                                </div>
                            </div>
@@ -95,23 +96,23 @@
                                                         @endif
                                                     </div>
                                                     <div class="button-change-image">
-                                                        <a href="{{'/profile/edit'}}" class="button button-outline-primary w-100">Ganti Profil</a>
+                                                        <a href="{{'/profile/edit'}}" class="button btn btn-secondary btn-outline-info w-100">Change Profile</a>
                                                     </div>
-                                                    <p class="info">File besar: maksimal 4.000.000 byte (4 MB). file yang diizinkan: .extensionJPG .JPEG .PNG</p>
+                                                    <p class="info">Large files: maximum 4,000,000 bytes (4 MB). allowed files: .extensionJPG .JPEG .PNG</p>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-8">
                                                 <div class="biodata-user">
-                                                    <h5 class="title-data-user">Profil Data Kamu</h5>
+                                                    <h5 class="title-data-user">Your Personal Profile</h5>
                                                     <div class="table-data-user">
                                                         <table>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td class="label">Nama</td>
+                                                                    <td class="label">Name</td>
                                                                     <td class="value">{{Auth::user()->name}}</td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td class="label">Nomor Telepon</td>
+                                                                    <td class="label">Phone Number</td>
                                                                     <td class="value">{{Auth::user()->phone}}</td>
                                                                 </tr>
                                                                 <tr>
@@ -123,7 +124,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="address-user">
-                                                    <h5 class="title-data-user">Alamat Kamu</h5>
+                                                    <h5 class="title-data-user">Your Address</h5>
                                                     <p>{{Auth::user()->adress}}</p>
                                                 </div>
                                                 <div class="edit-data-modal py-2 pt-3 d-flex justify-content-end">
@@ -131,7 +132,7 @@
                                                         <div class="modal-dialog">
                                                           <div class="modal-content">
                                                             <div class="modal-header">
-                                                              <h5 class="modal-title" id="changeDataProfileUserLabel">Ubah Profil</h5>
+                                                              <h5 class="modal-title" id="changeDataProfileUserLabel">Change Profile</h5>
                                                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
@@ -139,13 +140,13 @@
                                                                   <div class="row">
                                                                         <div class="col-6">
                                                                             <div class="form-input">
-                                                                                <label for="firstName" class="form-label">Nama awal</label>
+                                                                                <label for="firstName" class="form-label">First Name</label>
                                                                                 <input type="text" class="form-control" id="firstName">
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-6">
                                                                             <div class="form-input">
-                                                                                <label for="lastName" class="form-label">Nama Akhir</label>
+                                                                                <label for="lastName" class="form-label">Last Name</label>
                                                                                 <input type="text" class="form-control" id="lastName">
                                                                             </div>
                                                                         </div>
@@ -186,17 +187,17 @@
                                         <div class="row change-password">
                                             <div class="col-12 col-md-4 mb-4 mb-md-0">
                                                 <div class="greetings">
-                                                    <p>Halo, <span class="name">{{Auth::user()->name}}</span></p>
-                                                    <p>Ubah <span class="text-dark">keamanan akun</span> disini.</p>
+                                                    <p>Hello my precious, <span class="name">{{Auth::user()->name}}</span></p>
+                                                    <p>You can change <span class="text-dark">account security</span> here.</p>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-8">
-                                                <h5 class="title-data-user">Ganti Password</h5>
+                                                <h5 class="title-data-user">Change Password</h5>
                                                 <form action="{{route('password.change')}}" method="POST" enctype="multipart/form-data">
                                                     @csrf
                                                     @method('PATCH')
                                                     <div class="form-input">
-                                                        <label for="newPassword" class="form-label">Password baru</label>
+                                                        <label for="newPassword" class="form-label">New Password</label>
                                                         <div class="password-eye">
                                                             <input type="password" class="form-control" id="newPassword">
                                                             <div class="togglePassword">
@@ -205,17 +206,17 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-input">
-                                                        <label for="confirmPassword" class="form-label">Konfirmasi password</label>
+                                                        <label for="confirmPassword" class="form-label">Confirm Password</label>
                                                         <div class="password-eye">
                                                             <input type="password" name="password" class="form-control" id="confirmPassword">
                                                             <div class="togglePassword">
                                                                 <i class="bi bi-eye-fill"></i>
                                                             </div>
                                                         </div>
-                                                        <p id="small" style="color: red; display: none;">pastikan kata sandinya sama</p>
+                                                        <p id="small" style="color: red; display: none;">Make sure the password is the same !</p>
                                                     </div>
                                                     <div class="d-flex justify-content-end pt-3">
-                                                        <button class="button button-outline-primary" style="display: block;" id="button">Ganti Password</button>
+                                                        <button class="button btn btn-secondary btn-outline-info" style="display: block;" id="button">Change Password</button>
                                                     </div>
                                                 </form>
                                             </div>

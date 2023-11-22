@@ -38,11 +38,11 @@
                             <div class="buttonWrapper">
                                 @if (Route::has('login'))
                                         @auth
-                                            <a href="{{route('logout')}}" class="button button-outline button-outline-primary">Logout</a>
+                                            <a href="{{route('logout')}}" class="button button btn-outline-info">Logout</a>
                                         @else
                                             <a href="/login" class="button button btn-outline-info">Login</a>
                                             @if (Route::has('register'))
-                                            <a href="/register" class="button button btn-outline-info">Sign Up</a>
+                                            <a href="/register" class="button button btn-outline-info">Register</a>
                                             @endif
                                         @endauth
                                 @endif
@@ -63,9 +63,11 @@
             <div class="container">
                <div class="row first-line">
                    <div class="col-12 col-lg-8 col-xl-9">
+                   <div class="wrapperButton mb-4">
                      <a class="btn" href="/show"
-                            style="width: 100px; margin: -20px 0 10px 0;">Back</a>
-                        <div class="card">
+                            style="width: 100px; margin: -20px 0 10px 0; color: black;">Back</a>
+                    </div>           
+                        <div class="card">      
                             <h3>Your Cart</h3>
                             @if (Route::has('login'))
                                     @auth
@@ -113,6 +115,7 @@
                                     <p>Total</p>
                                     <p class="value-total-fix">Rp. 0</p>
                                 </div>
+                                <div class="wrapperButton mb-4">
                              @if (Route::has('login'))
                                 @auth
                                     <a href="/checkout" class="button w-100 text-decoration-none" style="background-color: #AEDEFC; color: black;">
@@ -124,6 +127,7 @@
                                 </a>
                                 @endauth
                             @endif
+                                </div>
                             </div>
                         </div>
                    </div>

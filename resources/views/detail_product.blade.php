@@ -119,7 +119,7 @@
                                 <div class="cartWrapper">
                                     <a href="/cart" class="cart icon">
                                         <img src="../../assets/img/icon/shopping-cart_icon.svg" alt="">
-                                        <div class="totalItem">0</div>
+                                        <div class="totalItem" style="background-color: #AEDEFC; color: black;">0</div>
                                     </a>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                                 <div class="buttonWrapper">
                                     <a href="{{ route('login.page') }}"
                                         class="button btn-outline-info">Login</a>
-                                    <a href="{{ route('register.page') }}" class="button btn-outline-info">Sign up</a>
+                                    <a href="{{ route('register.page') }}" class="button btn-outline-info">Register</a>
                                 </div>
 
                                 <div class="cartWrapper">

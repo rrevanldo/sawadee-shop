@@ -7,8 +7,8 @@
                 <form action="{{route('register.account')}}" method="POST">
                     @csrf
                     <div class="headForm">
-                        <h1>Buat Akun</h1>
-                        <p>Buat akun untuk melanjutkan </p>
+                        <h1>Create Account</h1>
+                        <p>Create an account to continue the next steps !</p>
                     </div>
                     <div class="bodyForm">
                         <div class="mb-3 inputForm">
@@ -56,10 +56,10 @@
                         </div>
 
                         <div class="wrapperButton mb-4">
-                            <button class="button" type="submit">Daftar</button>
+                            <button class="button" type="submit">Register</button>
                         </div>
 
-                        <p class="toSignUppage">Sudah punya akun ? <a href="/login">Masuk</a></p>
+                        <p class="toSignUppage">Already have an account ? <a href="/login">Login</a></p>
                     </div>
                 </form>
             </div>

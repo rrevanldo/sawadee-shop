@@ -5,9 +5,9 @@
         <div class="d-flex align-items-end row">
             <div class="col-sm-7">
                 <div class="card-body">
-                    <h5 class="card-title text-dark">Halo {{$user->name}}</h5>
+                    <h5 class="card-title text-dark">Hello our precious {{$user->name}}</h5>
                     <p class="mb-4">
-                        Silahkan untuk membuat <span class="fw-bold">kategori</span> di halaman kategori terlebih dahulu sebelum membuat produk                     </p>
+                        Please create a <span class="fw-bold">category</span> on the category page first before creating a product                     </p>
                 </div>
             </div>
             <div class="col-sm-5 text-center text-sm-left">

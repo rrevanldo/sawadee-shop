@@ -13,8 +13,8 @@
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
                     <div class="headForm">
-                        <h1>Selamat Datang !!</h1>
-                        <p>Silahkan masuk untuk melanjutkan</p>
+                        <h1>Welcome Precious Soul !</h1>
+                        <p>Please login for the next steps</p>
                     </div>
                     <div class="bodyForm">
                         <div class="mb-3 inputForm">
@@ -39,10 +39,10 @@
                         </div>
 
                         <div class="wrapperButton mb-4">
-                            <button class="button" type="submit">Masuk</button>
+                            <button class="button" type="submit">Login</button>
                         </div>
 
-                        <p class="toSignUppage">Tidak mempunyai akun ? <a href="{{ route('register.page') }}">Daftar sekarang!</a>
+                        <p class="toSignUppage">Don't have an account ? <a href="{{ route('register.page') }}">Register now!</a>
                         </p>
                     </div>
                 </form>

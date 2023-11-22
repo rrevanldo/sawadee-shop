@@ -30,7 +30,7 @@
                     <div class="leftSideNavbar">
                         <div class="text-logo">
                             <a href="/show" class="text-dark text-decoration-none">
-                                <h1 class="me-3">SH</h1>
+                                <h1 class="me-3"><img src="../../assets/img/logoSS.png" width="160px"></h1>
                             </a>
                         </div>
                     </div>
@@ -41,11 +41,11 @@
                                 @if (Route::has('login'))
                                     @auth
                                         <a href="{{ route('logout') }}"
-                                            class="button button-outline button-outline-primary">Keluar</a>
+                                            class="button btn-outline-info">Logout</a>
                                     @else
-                                        <a href="/login" class="button button-outline button-outline-primary">Masuk</a>
+                                        <a href="/login" class="button btn-outline-info">Login</a>
                                         @if (Route::has('register'))
-                                            <a href="/register" class="button button-primary">Daftar</a>
+                                            <a href="/register" class="button btn-outline-info">Register</a>
                                         @endif
                                     @endauth
                                 @endif
@@ -53,7 +53,7 @@
                             <div class="cartWrapper">
                                 <a href="/cart" class="cart icon">
                                     <img src="../../assets/img/icon/shopping-cart_icon.svg" alt="">
-                                    <div class="totalItem">0</div>
+                                    <div class="totalItem" style="background-color: #AEDEFC; color: black;">0</div>
                                 </a>
                             </div>
                         </div>
@@ -65,37 +65,37 @@
         <div id="mainContent">
             <div class="container">
                 <div class="checkout-container first-line card">
-                    <h4>Informasi Checkout</h4>
+                    <h4>Checkout Information</h4>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <button class="nav-link active" id="nav-personalData-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-personalData" type="button" role="tab"
                             aria-controls="nav-personalData" aria-selected="true">Data</button>
                         <button class="nav-link" id="nav-paymentConfirmation-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-paymentConfirmation" type="button" role="tab"
-                            aria-controls="nav-paymentConfirmation" aria-selected="false">Konfirmasi Pembayaran</button>
+                            aria-controls="nav-paymentConfirmation" aria-selected="false">Payment Confirmation</button>
                     </div>
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-personalData" role="tabpanel"
                             aria-labelledby="nav-personalData-tab">
                             <form action="" method="" enctype="multipart/form-data" id="customerForm">
-                                <h5 class="titleForm">Informasi Pribadi</h5>
+                                <h5 class="titleForm">Personal Information</h5>
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="form-input">
-                                            <label for="firstName" class="form-label">Nama</label>
+                                            <label for="firstName" class="form-label">Name</label>
                                             <input type="text" value="{{ Auth::user()->name }}" name="name"
                                                 class="form-control" id="firstName">
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <div class="form-input">Nomor Telepon</label>
+                                        <div class="form-input">Phone Number</label>
                                             <input type="number" value="{{ Auth::user()->phone }}" name="phone"
                                                 class="form-control" id="phone">
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-input">
-                                            <label class="form-label">Alamat</label>
+                                            <label class="form-label">Address</label>
                                             <input type="text" value="{{ Auth::user()->adress }}" name="adress"
                                                 class="form-control" id="address">
                                         </div>
@@ -108,23 +108,23 @@
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <label for="username" class="form-label">Produk kamu</label>
+                                        <label for="username" class="form-label">Your Product</label>
                                         <textarea style="margin-top: 0;" class="form-control product" name="product" readonly></textarea>
                                     </div>
                                     <div class="col-6">
-                                        <label for="username" class="form-label">Harga</label>
+                                        <label for="username" class="form-label">Price</label>
                                         <input class="form-control price" name="price" id="price" readonly />
                                     </div>
                                     <div class="col-6" style="display: none;">
-                                        <label for="username" class="form-label">Gambar Produk</label>
+                                        <label for="username" class="form-label">Product Picture</label>
                                         <input class="form-control image-product" name="image-product" readonly />
                                     </div>
                                     <div class="col-12"></div>
                                 </div>
                                 <div class="col-12 d-flex justify-content-between">
-                                    <a href="/cart" class="btn btn-outline-danger">Kembali</a>
-                                    <button type="submit" class="button button-primary"
-                                        onclick="displayCustomerDetails()">Konfirmasi</button>
+                                    <a href="/cart" class="btn btn-outline-danger" style="border-radius: 20px;">Cancel</a>
+                                    <button type="submit" class="button" style="background-color: #AEDEFC; color: black; border-radius: 20px;"
+                                        onclick="displayCustomerDetails()">Confirm</button>
                                 </div>
                             </form>
                         </div>
@@ -140,8 +140,8 @@
                                     </div>
 
                                     <div class="shipping-detail">
-                                        <h5>Belanjaan Anda</h5>
-                                        <p>Mohon pastikan anda memesan barang yang benar !!</p>
+                                        <h5>Your Items</h5>
+                                        <p>Please make sure you order the correct item !!</p>
 
                                         <div class="wrapper-item">
                                             <div class="item">
@@ -160,7 +160,7 @@
                                     <div class="wrapper-summary">
                                         <form action="">
                                             <div class="card">
-                                                <h4>Rincian</h4>
+                                                <h4>Details</h4>
                                                 <div class="detail-summary">
                                                     <div
                                                         class="d-flex align-items-center justify-content-between mb-2">
@@ -172,8 +172,8 @@
                                                     <button
                                                         class="button button-primary w-100 d-flex align-items-center justify-content-center"
                                                         type="button" id="dropdownMenuButton1"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Pilih Pembayaran
+                                                        data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #AEDEFC; color: black; border-radius: 10px;">
+                                                        Choose Payment Method
                                                         <ion-icon class="ms-2" name="chevron-down-outline">
                                                         </ion-icon>
 
@@ -227,31 +227,30 @@
                         </div>
                         <div class="card-body">
                             <ul>
-                                <li>Transfer ke nomor <span class="bold-text">+62 857-1881-3616</span> atas nama
-                                    Afif</li>
-                                <li>Pastikan Transfer Berhasil</li>
-                                <li>Screenshoot bukti transfer atau pembayaran</li>
-                                <li>Upload Bukti di kolom bawah dan submit</li>
+                                <li>Transfer to <span class="bold-text">+62 851-5740-8085</span> in the name of Nono</li>
+                                <li>Make sure the transfer is successful</li>
+                                <li>Please screenshot the proof of transfer or payment</li>
+                                <li>Upload evidence in the bottom column and submit</li>
                             </ul>
                         </div>
                     </div>
 
                     <form action="{{ route('pembayaran') }}" method="POST" enctype="multipart/form-data">
                         @csrf
-                        <p>Upload Bukti Transfer</p>
+                        <p>Upload transfer receipt</p>
                         <div class="form-input">
                             <input type="file" name="bukti_pembayaran" class="form-control">
                         </div>
                         <div style="display: none;">
                             <div class="col-6">
                                 <div class="form-input">
-                                    <label for="firstName" class="form-label">Nama</label>
+                                    <label for="firstName" class="form-label">Name</label>
                                     <input type="text" value="{{ Auth::user()->name }}" name="name"
                                         class="form-control" id="firstName">
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="form-input">Nomor Telepon</label>
+                                <div class="form-input">Phone Number</label>
                                     <input type="number" value="{{ Auth::user()->phone }}" name="phone"
                                         class="form-control" id="phone">
                                 </div>
@@ -283,7 +282,7 @@
                                 <input class="form-control image-product" name="image-product" readonly />
                             </div>
                         </div>
-                        <button type="submit" id="submitButton" class="button button-primary w-100">Bayar</button>
+                        <button type="submit" id="submitButton" class="button button-primary w-100">Submit Payment</button>
                     </form>
                 </div>
             </div>
@@ -329,7 +328,7 @@
 
                     <form action="">
                         <div class="proof-payment ">
-                            <p>Enter Proof of Transfer</p>
+                            <p>upload transfer receipt</p>
                             <input type="file" id="proofFile">
                             <label for="proofFile">
                                 <div class="card">
@@ -337,7 +336,7 @@
                                 </div>
                             </label>
 
-                            <button type="submit" class="button button-primary w-100">Pay</button>
+                            <button type="submit" class="button button-primary w-100">Submit Payment</button>
                         </div>
                     </form>
                 </div>

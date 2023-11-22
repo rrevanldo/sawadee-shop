@@ -1,7 +1,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <div class="app-card alert alert-dismissible shadow-sm mb-6 "
         style="margin-top: 50px; width:500px; margin-left:450px;">
-     <p style="margin-left: 20px; font-weight:bold">Bukti Pembayaran</p>
+     <p style="margin-left: 20px; font-weight:bold">Transfer Receipt</p>
         <div>
             <div class="app-card-body p-3 p-lg-4">
                 <div class="row gx-5 gy-3">
@@ -9,8 +9,8 @@
                 </div>
             </div>
         </div>
-        <a href="/dashboard/list-order"> <button class="btn btn-primary"
-                style="color:white">Kembali</button></a>
+        <a href="/dashboard/list-order"> <button class="btn btn-secondary"
+        style="background-color: #AEDEFC; color: black;">Back</button></a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
