@@ -122,8 +122,8 @@
                                     <div class="col-12"></div>
                                 </div>
                                 <div class="col-12 d-flex justify-content-between">
-                                    <a href="/cart" class="btn btn-outline-danger" style="border-radius: 20px;">Cancel</a>
-                                    <button type="submit" class="button" style="background-color: #AEDEFC; color: black; border-radius: 20px;"
+                                    <a href="/cart" class="button1 text-decoration-none" style="border-radius: 20px;"><button class="btn1">Cancel</button></a>
+                                    <button type="submit" class="button2"
                                         onclick="displayCustomerDetails()">Confirm</button>
                                 </div>
                             </form>
@@ -170,9 +170,9 @@
                                                 </div>
                                                 <div class="dropdown">
                                                     <button
-                                                        class="button button-primary w-100 d-flex align-items-center justify-content-center"
+                                                        class="btn3 button-primary w-100 d-flex align-items-center justify-content-center"
                                                         type="button" id="dropdownMenuButton1"
-                                                        data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #AEDEFC; color: black; border-radius: 10px;">
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         Choose Payment Method
                                                         <ion-icon class="ms-2" name="chevron-down-outline">
                                                         </ion-icon>

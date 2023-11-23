@@ -81,7 +81,7 @@
                         </h1>
                         <p>Welcome to <b>SawadeeShop</b> the home of unlimited online shopping! Explore the widest range of quality products and options to fulfill all your needs, only here. Discover an unparalleled shopping experience with our excellent service and competitive prices. Enjoy your shopping journey!</p>
                         <div class="flex-button-content1">
-                           <a href="/show"> <button class="comic-button">Let's Shop!</button> </a>
+                           <a href="/show" class="button1"> <button class="comic-button">Let's Shop!</button> </a>
                             <!-- <a class="btn btn-dark" href="/show">Let's Shop!</a> -->
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{$product->name}}</h5>
                                 <p class="card-text">Rp. {{ number_format($product->price, 0, ',', '.') }}</p>
-                                <a href="{{route('detail.product', $product->id)}}" class="btn" style="background-color: #AEDEFC; color: black; width: 100%;">Lihat Detail</a>
+                                <a href="{{route('detail.product', $product->id)}}" class="button2" style="color: black; width: 100%;"><button class="btn2"> Lihat Detail </button></a>
                             </div>
                         </div>
                         @endforeach
