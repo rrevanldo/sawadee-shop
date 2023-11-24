@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-lg fixed-top bg-body-light" style="padding: 0 !important">
         <div class="container">
             <a class="navbar-brand text-decoration-none text-black" href="{{ route('homepage') }}">
-                <h1 class="text-logo"><img src="assets/img/homepage/logoSS.png" width="150"></h1>
+                <h1 class="text-logo"><img src="assets/img/logoSS.png" width="150"></h1>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -49,19 +49,19 @@
                 <div class="slicing-color"></div>
                 @if (Route::has('login'))
                     @auth
-                        <a class="btn btn-light" href="{{ route('logout') }}">
-                            <img src="assets/img/homepage/icons8-login-50.png" width="20" height="20">
-                            Logout
+                        <a class="button1 btn-light" href="{{ route('logout') }}">
+                            <button class="btn1 type1"><img src="assets/img/homepage/icons8-login-50.png" width="20" height="20">
+                            Logout</button>
                         </a>
                     @else
-                        <a class="btn btn-light" href="/login">
-                            <img src="assets/img/homepage/icons8-login-50.png" width="20" height="20">
-                            LogIn
+                        <a class="button1 btn-light" href="/login">
+                        <button class="btn1 type1"><img src="assets/img/homepage/icons8-login-50.png" width="20" height="20">
+                            LogIn</button>
                         </a>
                         @if (Route::has('register'))
-                            <a class="btn btn-light" href="/register">
-                                <img src="assets/img/homepage/icons8-login-50.png" width="20" height="20">
-                                Daftar
+                            <a class="button1 btn-light" href="/register">
+                            <button class="btn1 type1"><img src="assets/img/homepage/icons8-login-50.png" width="20" height="20">
+                                Daftar</button>
                             </a>
                         @endif
                     @endauth
@@ -81,7 +81,7 @@
                         </h1>
                         <p>Welcome to <b>SawadeeShop</b> the home of unlimited online shopping! Explore the widest range of quality products and options to fulfill all your needs, only here. Discover an unparalleled shopping experience with our excellent service and competitive prices. Enjoy your shopping journey!</p>
                         <div class="flex-button-content1">
-                           <a href="/show"> <button class="comic-button">Let's Shop!</button> </a>
+                           <a href="/show" class="button1"> <button class="comic-button">Let's Shop!</button> </a>
                             <!-- <a class="btn btn-dark" href="/show">Let's Shop!</a> -->
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{$product->name}}</h5>
                                 <p class="card-text">Rp. {{ number_format($product->price, 0, ',', '.') }}</p>
-                                <a href="{{route('detail.product', $product->id)}}" class="btn" style="background-color: #AEDEFC; color: black; width: 100%;">Lihat Detail</a>
+                                <a href="{{route('detail.product', $product->id)}}" class="button2" style="color: black; width: 100%;"><button class="btn2"> Lihat Detail </button></a>
                             </div>
                         </div>
                         @endforeach

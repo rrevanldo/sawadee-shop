@@ -154,7 +154,7 @@
                             <div class="cartWrapper">
                                 <a href="/cart" class="cart icon">
                                     <img src="./assets/img/icon/shopping-cart_icon.svg" alt="" />
-                                    <div class="totalItem" style="background-color: #AEDEFC; color: black;">0</div>
+                                    <div class="totalItem" style="background-color: #629BBA; color: white;">0</div>
                                 </a>
                             </div>
                         </div>
@@ -209,7 +209,7 @@
                                             <p class="price">Rp. {{ number_format($bestProduct->price, 0, ',', '.') }}
                                             </p>
                                             <div class="discountDetail" >
-                                                <div class="discountValue" style="background-color: #AEDEFC; color: black;">
+                                                <div class="discountValue" style="background-color: #629BBA; color: white;">
                                                     {{ $bestProduct->category->name }}
                                                 </div>
                                             </div>
@@ -243,7 +243,7 @@
                                     </p>
                                     <p class="price">Rp. {{ number_format($item->price, 0, ',', '.') }}</p>
                                     <div class="discountDetail">
-                                        <div class="discountValue" style="background-color: #AEDEFC; color: black;">{{ $item->category->name }}</div>
+                                        <div class="discountValue" style="background-color: #629BBA; color: white;">{{ $item->category->name }}</div>
                                     </div>
                                 </div>
                             </a>

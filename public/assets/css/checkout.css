@@ -24,6 +24,161 @@ body {
     background-color: #f6f7fb;
 }
 
+.btn1 {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #FF0072;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #FF0072;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .btn1:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #FF0072;
+    z-index: -1;
+  }
+  
+  .btn1:hover, .btn1:focus {
+    color: white;
+  }
+  
+  .btn1:hover:before, .btn1:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .btn1:active {
+    transform: scale(0.9);
+  }
+
+  .button2 {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #427D9D;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #427D9D;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .button2:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #427D9D;
+    z-index: -1;
+  }
+  
+  .button2:hover, .button2:focus {
+    color: white;
+  }
+  
+  .button2:hover:before, .button2:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .button2:active {
+    transform: scale(0.9);
+  }
+
+  .btn3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background: #629BBA;
+    height: 30px;
+    line-height: 60px;
+    text-align: center;
+    padding: 0 50px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 77px 12px rgba(0,0,0,0.13);
+    -webkit-box-shadow: 0px 0px 77px 12px rgba(0,0,0,0.13);
+    -moz-box-shadow: 0px 0px 77px 12px rgba(0,0,0,0.13);
+  }
+  
+  .btn3:before, .btn3:after {
+    content: "";
+    background: #427D9D;
+    height: 50%;
+    width: 0;
+    position: absolute;
+    transition: .3s cubic-bezier(.785,.135,.15,.86);
+    -webkit-transition: .3s cubic-bezier(.785,.135,.15,.86);
+    z-index: -1;
+  }
+  
+  .btn3::before {
+    top: 0;
+    left: 0;
+    right: auto;
+  }
+  
+  .btn3:after {
+    bottom: 0;
+    right: 0;
+    left: auto;
+  }
+  
+  .btn3:hover {
+    color: #fff;
+    background-color: #fff;
+  }
+  
+  .btn3:hover:before {
+    width: 100%;
+    right: 0;
+    left: auto;
+  }
+  
+  .btn3:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+  
+  
 /*Colors palette*/
 .titleForm {
     font-weight: 600;

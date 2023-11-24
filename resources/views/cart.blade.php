@@ -50,7 +50,7 @@
                             <div class="cartWrapper">
                                 <a href="/cart" class="cart icon">
                                     <img src="./assets/img/icon/shopping-cart_icon.svg" alt="">
-                                    <div class="totalItem" style="background-color: #AEDEFC; color: black;">0</div>
+                                    <div class="totalItem" style="background-color: #629BBA; color: white;">0</div>
                                 </a>
                             </div>
                         </div>
@@ -63,10 +63,7 @@
             <div class="container">
                <div class="row first-line">
                    <div class="col-12 col-lg-8 col-xl-9">
-                   <div class="wrapperButton mb-4">
-                     <a class="btn" href="/show"
-                            style="width: 100px; margin: -20px 0 10px 0; color: black;">Back</a>
-                    </div>           
+                     <a class="button1" href="/show"><button class="btn1">Back</button> </a>      
                         <div class="card">      
                             <h3>Your Cart</h3>
                             @if (Route::has('login'))
@@ -118,12 +115,12 @@
                                 <div class="wrapperButton mb-4">
                              @if (Route::has('login'))
                                 @auth
-                                    <a href="/checkout" class="button w-100 text-decoration-none" style="background-color: #AEDEFC; color: black;">
-                                        Checkout
+                                    <a href="/checkout" class="button2 w-100 text-decoration-none">
+                                        <button class="btn2">Checkout</button>
                                     </a>
                                 @else
-                                <a href="/login" class="button w-100 text-decoration-none" style="background-color: #AEDEFC; color: black;">
-                                    Login and Checkout
+                                <a href="/login" class="button2 w-100 text-decoration-none">
+                                    <button class="btn2">Login and Checkout</button>
                                 </a>
                                 @endauth
                             @endif

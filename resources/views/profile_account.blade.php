@@ -40,7 +40,7 @@
                             <div class="cartWrapper">
                                 <a href="/cart" class="cart icon">
                                     <img src="./assets/img/icon/shopping-cart_icon.svg" alt="">
-                                    <div class="totalItem" style="background-color: #AEDEFC; color: black;">0</div>
+                                    <div class="totalItem" style="background-color: #629BBA; color: white;">0</div>
                                 </a>
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                                                         @endif
                                                     </div>
                                                     <div class="button-change-image">
-                                                        <a href="{{'/profile/edit'}}" class="button btn btn-secondary btn-outline-info w-100">Change Profile</a>
+                                                        <a href="{{'/profile/edit'}}" class="button btn btn w-100" style="background-color: #629BBA; color: white;">Change Profile</a>
                                                     </div>
                                                     <p class="info">Large files: maximum 4,000,000 bytes (4 MB). allowed files: .extensionJPG .JPEG .PNG</p>
                                                 </div>
@@ -216,7 +216,7 @@
                                                         <p id="small" style="color: red; display: none;">Make sure the password is the same !</p>
                                                     </div>
                                                     <div class="d-flex justify-content-end pt-3">
-                                                        <button class="button btn btn-secondary btn-outline-info" style="display: block;" id="button">Change Password</button>
+                                                        <button class="button btn btn" style="display: block; background-color: #629BBA; color: white;" id="button">Change Password</button>
                                                     </div>
                                                 </form>
                                             </div>

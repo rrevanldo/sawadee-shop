@@ -119,7 +119,7 @@
                                 <div class="cartWrapper">
                                     <a href="/cart" class="cart icon">
                                         <img src="../../assets/img/icon/shopping-cart_icon.svg" alt="">
-                                        <div class="totalItem" style="background-color: #AEDEFC; color: black;">0</div>
+                                        <div class="totalItem" style="background-color: #629BBA; color: white;">0</div>
                                     </a>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                 <div class="cartWrapper">
                                     <a href="/cart" class="cart icon">
                                         <img src="../../assets/img/icon/shopping-cart_icon.svg" alt="" />
-                                        <div class="totalItem" style="background-color: #AEDEFC; color: black;">0</div>
+                                        <div class="totalItem" style="background-color: #629BBA; color: white;">0</div>
                                     </a>
                                 </div>
                             </div>
@@ -148,8 +148,7 @@
             <div class="container">
                 <div class="row first-line">
                     <div class="col-12 col-lg-8 col-xl-9">
-                        <a class="btn" href="/show"
-                            style="width: 100px; margin: -20px 0 10px 0;">Back</a>
+                    <a class="button1" href="/show" style="width: 100px; margin: -20px 0 10px 0;"><button class="btn1">Back</button> </a>    
                         <div class="card">
                             <div class="wrapperDetailProduct row">
                                 <div class="col-12 col-lg-5">
@@ -263,8 +262,8 @@
                                         <p>Rp. <span>0</span></p>
                                     </div>
                                 </div>
-                                <button id="add-to-cart" class="button w-100" style="background-color: #AEDEFC">
-                                    <img src="../../assets/img/icon/shopping-cart_icon.svg" alt="">
+                                <button id="add-to-cart" class="btn2">
+                                    <img src="../../assets/img/icon/shopping-cart_icon.svg" width="20px" alt="">
                                     Add to cart
                                 </button>
                             </div>

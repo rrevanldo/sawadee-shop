@@ -19,29 +19,37 @@ p {
     outline: none;
     font-family: "Poppins", sans-serif;
 }
-#mainContent .container .row .col-12 .wrapperButton .btn {
+
+.btn1 {
     width: 6.5em;
     height: 2.3em;
     margin: 0.5em;
-    background: #AEDEFC;
+    background: #88AFFC;
     color: white;
     border: none;
     border-radius: 0.625em;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     position: relative;
     z-index: 1;
     overflow: hidden;
    }
+
+.button1{
+    text-decoration: none;
+    width: 100px; 
+    margin: -20px 0 10px 0; 
+    color: black;
+}
    
-a:hover {
-    color: #AEDEFC;
+.btn1:hover {
+    color: white;
    }
    
-a:after {
+.btn1:after {
     content: "";
-    background: white;
+    background: #427D9D;
     position: absolute;
     z-index: -1;
     left: -20%;
@@ -52,49 +60,39 @@ a:after {
     transition: all 0.5s;
    }
    
-a:hover:after {
+.btn1:hover:after {
     transform: skewX(-45deg) scale(1, 1);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
    }
 
-   #mainContent .container .row .col-12 .wrapper-delivery .wrapperButton .button {
-    width: 6.5em;
-    height: 2.3em;
-    margin: 0.5em;
-    background: #AEDEFC;
-    color: white;
-    border: none;
-    border-radius: 0.625em;
-    font-size: 20px;
-    font-weight: bold;
+.button2 .btn2 {
+    width: 240px;
+    height: 40px;
+    font-size: 1.1em;
     cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+    background-color: #88AFFC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all .4s;
+    margin-top: 10px;
    }
    
-a:hover {
-    color: #AEDEFC;
+   .button2 .btn2:hover {
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #427D9D,
+     0 15px 0 -4px #629BBA,
+     0 16px 10px -3px #9BBEC8;
    }
    
-a:after {
-    content: "";
-    background: white;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s;
-   }
-   
-a:hover:after {
-    transform: skewX(-45deg) scale(1, 1);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+   .button2 .btn2:active {
+    transition: all 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 0 -2px #f85959,
+     0 8px 0 -4px #39a2db,
+     0 12px 10px -3px #39a2db;
    }
 
 .first-line h3 {

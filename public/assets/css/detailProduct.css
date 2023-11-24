@@ -20,29 +20,36 @@ p {
     font-family: "Poppins", sans-serif;
 }
 
-.btn {
+.btn1 {
     width: 6.5em;
     height: 2.3em;
     margin: 0.5em;
-    background: #AEDEFC;
+    background: #88AFFC;
     color: white;
     border: none;
     border-radius: 0.625em;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     position: relative;
     z-index: 1;
     overflow: hidden;
    }
+
+.button1{
+    text-decoration: none;
+    width: 100px; 
+    margin: -20px 0 10px 0; 
+    color: black;
+}
    
-a:hover {
-    color: #AEDEFC;
+.btn1:hover {
+    color: white;
    }
    
-a:after {
+.btn1:after {
     content: "";
-    background: white;
+    background: #427D9D;
     position: absolute;
     z-index: -1;
     left: -20%;
@@ -53,11 +60,43 @@ a:after {
     transition: all 0.5s;
    }
    
-a:hover:after {
+.btn1:hover:after {
     transform: skewX(-45deg) scale(1, 1);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
    }
+
+   .btn2 {
+    background-color: #629BBA;
+    padding: 8px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed #629BBA;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+    width: 220px;
+    font-size: 12px;
+   }
+   
+   .btn2 span:last-child {
+    display: none;
+   }
+   
+   .btn2:hover {
+    transition: .4s;
+    border: 2px dashed #427D9D;
+    background-color: #fff;
+    color: #000;
+   }
+   
+   .btn2:active {
+    background-color: #87dbd0;
+   }
+   
+   
 
    
 /*Colors palette*/

@@ -36,7 +36,7 @@ nav .btn {
 
 
 nav .slicing-color {
-    background-color: #AEDEFC;
+    background-color: #629BBA;
     padding: 35px 170px;
     right: 0;
     position: absolute;
@@ -46,6 +46,100 @@ nav .slicing-color {
 h1.text-logo {
     color: #1a1d20;
 }
+
+.btn1 {
+    cursor: pointer;
+    position: relative;
+    padding: 7px 24px;
+    font-size: 15px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .btn1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color:white;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .btn1:hover::before {
+    scale: 3;
+  }
+  
+  .btn1:hover {
+    color: #629BBA;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+    border-color: #629BBA;
+  }
+  
+  .btn1:active {
+    scale: 1;
+  }
+  
+
+.btn2 {
+    width: 150px;
+    height: 30px;
+    border: 2px solid #427D9D;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    outline: none;
+    text-align: center;
+    z-index: 2;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .btn2::after {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .btn2:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    color: #fff;
+  }
+  
+  .btn2:hover::after {
+    transform: scale(2) rotate(180deg);
+    background: #427D9D;
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
 
 .container .row .content1 {
     display: flex;
@@ -88,8 +182,8 @@ h1.text-logo {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: #000;
-    background-color: #AEDEFC;
+    color: #fff;
+    background-color: #629BBA;
     border: 2px solid #000;
     border-radius: 10px;
     box-shadow: 5px 5px 0px #000;
@@ -98,9 +192,9 @@ h1.text-logo {
   
 .col-7 .flex-button-content1 .comic-button:hover {
     background-color: #000;
-    color: #AEDEFC;
-    border: 2px solid #AEDEFC;
-    box-shadow: 5px 5px 0px #AEDEFC;
+    color: #629BBA;;
+    border: 2px solid #629BBA;;
+    box-shadow: 5px 5px 0px #629BBA;;
   }
   
 .col-7 .flex-button-content1 .comic-button:active {
@@ -240,7 +334,7 @@ h1.text-logo {
 }
 
 .content3 .flex-content3 {
-    background-color: #AEDEFC;
+    background-color: #629BBA;;
     border-radius: 25px;
     width: 100%;
     overflow: hidden;
@@ -264,7 +358,7 @@ h1.text-logo {
 
 .content3 .flex-content3 .text-content3 {
     width: 650px;
-    color: black;
+    color: white;
     font-family: "Poppins", sans-serif;
     margin: 90px 0 0 430px;
 }
@@ -278,14 +372,14 @@ h1.text-logo {
 .content3 .flex-content3 .text-content3 h2 {
     font-weight: 700;
     font-size: 35px;
-    color: black;
+    color: white;
     margin-top: 20px;
     margin-left: 80px;
 }
 
 .content3 .flex-content3 .text-content3 p {
     font-size: 16px;
-    color: black;
+    color: white;
     margin-top: 20px;
     margin-left: 80px;
 }
@@ -398,7 +492,7 @@ a.product {
 }
 
 footer {
-    background-color: #AEDEFC;
+    background-color: #629BBA;;
     height: auto;
     padding: 10px 0;
     text-align: center;

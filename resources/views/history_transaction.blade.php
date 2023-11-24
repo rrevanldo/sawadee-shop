@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SH E-Commerce</title>
+    <title>SawadeeShop</title>
+    <link rel="icon" href="./assets/img/logoSS.png"">
 
     <!--Bootstrap Css-->
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -31,7 +32,7 @@
                     <div class="leftSideNavbar">
                         <div class="logo-text">
                             <a href="/show" class="text-decoration-none">
-                                <h1 class="text-black me-3">SH</h1>
+                                <h1 class="text-black me-3"><img src="./assets/img/logoSS.png" width="160px"></h1>
                             </a>
                         </div>
                     </div>
@@ -41,7 +42,7 @@
                             <div class="cartWrapper">
                                 <a href="/cart" class="cart icon">
                                     <img src="./assets/img/icon/shopping-cart_icon.svg" alt="">
-                                    <div class="totalItem">0</div>
+                                    <div class="totalItem" style="background-color: #629BBA; color: white;">0</div>
                                 </a>
                             </div>
                         </div>

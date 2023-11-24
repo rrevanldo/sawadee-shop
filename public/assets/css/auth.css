@@ -179,8 +179,8 @@ input[type="color"]:focus,
     /* width: 6.5em; */
     height: 2.3em;
     margin: 0.5em;
-    background: #AEDEFC;
-    color: black;
+    background: #629BBA;
+    color: white;
     border: none;
     border-radius: 0.625em;
     font-size: 20px;
@@ -194,12 +194,12 @@ input[type="color"]:focus,
    }
    
 button:hover {
-    color: #AEDEFC;
+    color: black;
    }
    
 button:after {
     content: "";
-    background: white;
+    background: #427D9D;
     position: absolute;
     z-index: -1;
     left: -20%;
@@ -214,6 +214,7 @@ button:hover:after {
     transform: skewX(-45deg) scale(1, 1);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    color: black;
    }
 
 /* #auth .wrapper .authForm form .bodyForm .wrapperButton .button {
