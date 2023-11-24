@@ -50,7 +50,7 @@
                             <div class="cartWrapper">
                                 <a href="/cart" class="cart icon">
                                     <img src="./assets/img/icon/shopping-cart_icon.svg" alt="">
-                                    <div class="totalItem" style="background-color: #AEDEFC; color: black;">0</div>
+                                    <div class="totalItem" style="background-color: #629BBA; color: white;">0</div>
                                 </a>
                             </div>
                         </div>
@@ -120,7 +120,7 @@
                                     </a>
                                 @else
                                 <a href="/login" class="button2 w-100 text-decoration-none">
-                                    Login and Checkout
+                                    <button class="btn2">Login and Checkout</button>
                                 </a>
                                 @endauth
                             @endif

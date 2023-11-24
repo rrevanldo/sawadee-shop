@@ -24,11 +24,11 @@ p {
     width: 6.5em;
     height: 2.3em;
     margin: 0.5em;
-    background: #AEDEFC;
-    color: black;
+    background: #88AFFC;
+    color: white;
     border: none;
     border-radius: 0.625em;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     position: relative;
@@ -71,8 +71,8 @@ p {
     height: 40px;
     font-size: 1.1em;
     cursor: pointer;
-    background-color: #AEDEFC;
-    color: #000;
+    background-color: #88AFFC;
+    color: #fff;
     border: none;
     border-radius: 5px;
     transition: all .4s;
@@ -82,8 +82,8 @@ p {
    .button2 .btn2:hover {
     border-radius: 5px;
     transform: translateY(-10px);
-    box-shadow: 0 7px 0 -2px #164863,
-     0 15px 0 -4px #427D9D,
+    box-shadow: 0 7px 0 -2px #427D9D,
+     0 15px 0 -4px #629BBA,
      0 16px 10px -3px #9BBEC8;
    }
    

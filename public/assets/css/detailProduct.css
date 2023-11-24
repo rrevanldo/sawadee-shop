@@ -24,11 +24,11 @@ p {
     width: 6.5em;
     height: 2.3em;
     margin: 0.5em;
-    background: #AEDEFC;
-    color: black;
+    background: #88AFFC;
+    color: white;
     border: none;
     border-radius: 0.625em;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     position: relative;
@@ -67,14 +67,14 @@ p {
    }
 
    .btn2 {
-    background-color: #AEDEFC;
-    padding: 14px 20px;
-    color: #000;
+    background-color: #629BBA;
+    padding: 8px 20px;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
     border-radius: 10px;
-    border: 2px dashed #AEDEFC;
+    border: 2px dashed #629BBA;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: .4s;
     width: 220px;

@@ -119,7 +119,7 @@
                                 <div class="cartWrapper">
                                     <a href="/cart" class="cart icon">
                                         <img src="../../assets/img/icon/shopping-cart_icon.svg" alt="">
-                                        <div class="totalItem" style="background-color: #AEDEFC; color: black;">0</div>
+                                        <div class="totalItem" style="background-color: #629BBA; color: white;">0</div>
                                     </a>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                 <div class="cartWrapper">
                                     <a href="/cart" class="cart icon">
                                         <img src="../../assets/img/icon/shopping-cart_icon.svg" alt="" />
-                                        <div class="totalItem" style="background-color: #AEDEFC; color: black;">0</div>
+                                        <div class="totalItem" style="background-color: #629BBA; color: white;">0</div>
                                     </a>
                                 </div>
                             </div>
