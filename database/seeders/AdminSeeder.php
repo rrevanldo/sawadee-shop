@@ -22,5 +22,14 @@ class AdminSeeder extends Seeder
             'role' => 'admin',
             'password' => bcrypt('admin123'),
         ]);
+
+        User::create([
+            'name' => 'kurir',
+            'email' => 'kurir@gmail.com',
+            'phone' => '0868 4686 6846',
+            'adress' => 'rumah kurir',
+            'role' => 'kurir',
+            'password' => bcrypt('kurir123'),
+        ]);
     }
 }
