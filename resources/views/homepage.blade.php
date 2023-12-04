@@ -108,7 +108,7 @@
                     </div>
                 </div> -->
 
-                <div class="content3" id="content3">
+                <!-- <div class="content3" id="content3">
                     <div class="flex-content3">
                         <div class="image-absolute">
                             <img class="circle-shapes1" src="assets/img/homepage/circle-shapes.png" width="200px"
@@ -129,9 +129,10 @@
                             <p>So, what are you waiting for? Let's go shopping at SawadeeShop to make your life much easier and practical, you will feel a shopping experience that will never be forgotten.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="content4" id="content4">
+                   <img src="assets/img/wave1.png" class="background1">
                     <h5>Product</h5>
                     <h2>NEW & HOT ITEMS</h2>
                     <div class="multiple-items">

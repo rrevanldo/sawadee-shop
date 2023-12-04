@@ -44,7 +44,7 @@ nav .slicing-color {
 }
 
 h1.text-logo {
-    color: #1a1d20;
+    color: #97aec4;
 }
 
 .btn1 {
@@ -409,6 +409,14 @@ div#content4 {
     color: #1a1d20;
 }
 
+.background1 {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: 40px; 
+    z-index: 0;
+}
+
 .content4 .multiple-items .card {
     margin: 10px 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -492,7 +500,7 @@ a.product {
 }
 
 footer {
-    background-color: #629BBA;;
+    background-color: #629BBA;
     height: auto;
     padding: 10px 0;
     text-align: center;
