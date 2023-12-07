@@ -166,7 +166,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{$product->name}}</h5>
                                 <p class="card-text">Rp. {{ number_format($product->price, 0, ',', '.') }}</p>
-                                <a href="{{route('detail.product', $product->id)}}" class="button2" style="color: black; width: 100%;"><button class="btn2"> Lihat Detail </button></a>
+                                <a href="{{route('detail.product', $product->id)}}" class="button2" style="color: black; width: 100%;"><button class="btn2"> See Details </button></a>
                             </div>
                         </div>
                         @endforeach

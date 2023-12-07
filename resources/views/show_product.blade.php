@@ -169,7 +169,7 @@
             <div class="row line">
                 <div class="col-12 col-lg-3 mb-4 mb-lg-0">
                     <div class="categoriesContainer">
-                        <h4>List Kategori</h4>
+                        <h4>Category List</h4>
                         <div class="wrapperCategories row">
                             @foreach ($categories as $category)
                                 <div class="col-12 col-sm-6 col-md-3 col-lg-12">

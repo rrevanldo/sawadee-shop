@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SH E-Commerce</title>
+    <title>SawadeeShop</title>
+    <link rel="icon" href="./assets/img/logoSS.png"">
 
     <!--Bootstrap Css-->
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -43,22 +44,22 @@
                                 <div class="menu-profile">
                                     <a href="{{route('homepage')}}" class="menu">
                                         <ion-icon name="home"></ion-icon>
-                                        Beranda
+                                        Home
                                     </a>
                                     <a href="#" class="menu">
                                         <ion-icon name="person"></ion-icon>
-                                        Setting Profil
+                                        Profile setting
                                     </a>
                                     @if(Auth::user()->role == 'user')
                                     <a href="#" class="menu">
                                         <ion-icon name="cart"></ion-icon>
-                                        Riwayat Transaksi
+                                        Transaction History
                                     </a>
                                     @else
                                     @endif
                                     <a href="{{ route('logout') }}" class="menu logout">
                                         <ion-icon name="log-out"></ion-icon>
-                                        Keluar
+                                        Logout
                                     </a>
                                 </div>
                             </div>
@@ -68,11 +69,11 @@
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <button class="nav-link active" id="nav-profileData-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-profileData" type="button" role="tab"
-                                        aria-controls="nav-profileData" aria-selected="true">Setting Profil</button>
+                                        aria-controls="nav-profileData" aria-selected="true">Profile Setting</button>
                                         @if(Auth::user()->role == 'user')
                                     <button class="nav-link" id="nav-securitySetting-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-securitySetting" type="button" role="tab"
-                                        aria-controls="nav-securitySetting" aria-selected="false">Riwayat Transaksi</button>
+                                        aria-controls="nav-securitySetting" aria-selected="false">Transaction History</button>
                                         @else
                                         @endif
                                 </div>
@@ -87,23 +88,23 @@
                                                     </div>
                                                     <div class="button-change-image">
                                                         <a href="#"
-                                                            class="button button-outline-primary w-100">Ganti Profil</a>
+                                                            class="button button-outline-primary w-100">Change Profile</a>
                                                     </div>
-                                                    <p class="info">File besar: maksimal 4.000.000 byte (4 MB). file yang diizinkan: .extensionJPG .JPEG .PNG</p>
+                                                    <p class="info">Large files: maximum 4,000,000 bytes (4 MB). allowed files: .extensionJPG .JPEG .PNG</p>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-8">
                                                 <div class="biodata-user">
-                                                    <h5 class="title-data-user">Profil Kamu</h5>
+                                                    <h5 class="title-data-user">Your Personal Profile</h5>
                                                     <div class="table-data-user">
                                                         <table>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td class="label">Nama</td>
+                                                                    <td class="label">Name</td>
                                                                     <td class="value">{{ Auth::user()->name }}</td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td class="label">Nomor Telepon</td>
+                                                                    <td class="label">Phone Number</td>
                                                                     <td class="value">{{ Auth::user()->phone }}</td>
                                                                 </tr>
                                                                 <tr>
@@ -119,14 +120,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="address-user">
-                                                    <h5 class="title-data-user">Alamat Kamu</h5>
+                                                    <h5 class="title-data-user">Your Adress</h5>
                                                     <p>{{ Auth::user()->adress }}</p>
                                                 </div>
                                                 <div class="edit-data-modal py-2 pt-3 d-flex justify-content-end">
                                                     <button type="button" class="button button-text"
                                                         data-bs-toggle="modal"
                                                         data-bs-target="#changeDataProfileUser">
-                                                        Ganti Data Profil
+                                                        Change Profile Data
                                                     </button>
                                                     <div class="modal fade" id="changeDataProfileUser"
                                                         data-bs-backdrop="static" data-bs-keyboard="false"
@@ -136,7 +137,7 @@
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
                                                                     <h5 class="modal-title"
-                                                                        id="changeDataProfileUserLabel">Ubah Profil
+                                                                        id="changeDataProfileUserLabel">Change Profile
                                                                     </h5>
                                                                     <button type="button" class="btn-close"
                                                                         data-bs-dismiss="modal"
@@ -152,7 +153,7 @@
                                                                             <div class="col-12">
                                                                                 <div class="form-input">
                                                                                     <label for="phoneNumber"
-                                                                                        class="form-label">Nama</label>
+                                                                                        class="form-label">Name</label>
                                                                                     <input type="text"
                                                                                         class="form-control"
                                                                                         id="name"
@@ -163,7 +164,7 @@
                                                                             <div class="col-12">
                                                                                 <div class="form-input">
                                                                                     <label for="phoneNumber"
-                                                                                        class="form-label">Nomor Telepon</label>
+                                                                                        class="form-label">Phone Number</label>
                                                                                     <input type="number"
                                                                                         class="form-control"
                                                                                         id="phoneNumber"
@@ -185,7 +186,7 @@
                                                                             <div class="col-12">
                                                                                 <div class="form-input">
                                                                                     <label for="address"
-                                                                                        class="form-label">Alamat</label>
+                                                                                        class="form-label">Adress</label>
                                                                                     <textarea name="adress" id="address" cols="30" rows="5" class="form-control"
                                                                                         >{{Auth::user()->adress}}</textarea>
                                                                                 </div>
@@ -196,7 +197,7 @@
                                                                                 class="col-12 d-flex justify-content-end">
                                                                                 <button
                                                                                     class="button button-outline-primary"
-                                                                                    type="submit">Ubah Profil</button>
+                                                                                    type="submit">Change Profile</button>
                                                                             </div>
                                                                         </div>
                                                                     </form>
@@ -215,9 +216,9 @@
                                                 <thead>
                                                     <tr>
                                                         <th scope="col">No</th>
-                                                        <th scope="col">Produk</th>
-                                                        <th scope="col">Harga</th>
-                                                        <th scope="col">Tanggal</th>
+                                                        <th scope="col">Product</th>
+                                                        <th scope="col">Price</th>
+                                                        <th scope="col">Date</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>

@@ -64,15 +64,15 @@
                                 <div class="menu-profile">
                                     <a href="/profile" class="menu">
                                         <ion-icon name="person"></ion-icon>
-                                        Akun
+                                        Acoount
                                     </a>
                                     <a href="/history" class="menu">
                                         <ion-icon name="cart"></ion-icon>
-                                        Riwayat Transaksi
+                                        Transaction History
                                     </a>
                                     <a href="{{route('logout')}}" class="menu logout">
                                         <ion-icon name="log-out"></ion-icon>
-                                        Keluar
+                                        Logout
                                     </a>
                                 </div>
                             </div>
@@ -83,19 +83,19 @@
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                         <button class="nav-link active" id="nav-All-tab" data-bs-toggle="tab"
                                             data-bs-target="#nav-All" type="button" role="tab" aria-controls="nav-All"
-                                            aria-selected="true">Semua Transaksi</button>
+                                            aria-selected="true">All Transaction</button>
                                         <button class="nav-link" id="nav-done-tab" data-bs-toggle="tab"
                                             data-bs-target="#nav-done" type="button" role="tab" aria-controls="nav-done"
-                                            aria-selected="false">Selesai</button>
+                                            aria-selected="false">Done</button>
                                         <button class="nav-link" id="nav-pengiriman-tab" data-bs-toggle="tab"
                                             data-bs-target="#nav-pengiriman" type="button" role="tab" aria-controls="nav-pengiriman"
-                                            aria-selected="false">Konfirmasi Penerimaan</button>
+                                            aria-selected="false">Confirm Acceptance</button>
                                         <button class="nav-link" id="nav-proccess-tab" data-bs-toggle="tab"
                                             data-bs-target="#nav-proccess" type="button" role="tab"
-                                            aria-controls="nav-proccess" aria-selected="false">Sedang Proses</button>
+                                            aria-controls="nav-proccess" aria-selected="false">In Process</button>
                                         <button class="nav-link" id="nav-failed-tab" data-bs-toggle="tab"
                                             data-bs-target="#nav-failed" type="button" role="tab"
-                                            aria-controls="nav-failed" aria-selected="false">Gagal</button>
+                                            aria-controls="nav-failed" aria-selected="false">Failed</button>
                                     </div>
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="nav-All" role="tabpanel"
@@ -113,9 +113,9 @@
                                                     @elseif($histories['status'] == 2)
                                                     <div class="status danger">Gagal</div>
                                                     @elseif($histories['status'] == 3)
-                                                    <div class="alert alert-warning" role="alert" style="margin: 0 5px 0 0; padding: 5px 5px;">Pesanan sedang diantar</div>
+                                                    <div class="alert alert-warning" role="alert" style="margin: 0 5px 0 0; padding: 5px 5px;">Orders on Delivery</div>
                                                     @elseif($histories['status'] == 0)
-                                                    <div class="alert alert-secondary" role="alert" style="margin: 0 5px 0 0; padding: 5px 5px;">Proses</div>
+                                                    <div class="alert alert-secondary" role="alert" style="margin: 0 5px 0 0; padding: 5px 5px;">Process</div>
                                                     @endif
                                                 </div>
                                                 <div class="body-item">
@@ -132,7 +132,7 @@
                                                                 <button type="button" class="button button-text"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#seeDetailModal{{$histories->id}}">
-                                                                    Lihat Detail
+                                                                    See Details
                                                                 </button>
                                                             </div>
 
@@ -145,44 +145,44 @@
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
                                                                             <h5 class="modal-title"
-                                                                                id="seeDetailModalLabel">Detail Transaksi</h5>
+                                                                                id="seeDetailModalLabel">Transaction Details</h5>
                                                                             <button type="button" class="btn-close"
                                                                                 data-bs-dismiss="modal"
                                                                                 aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body">
                                                                             <div class="line-detail">
-                                                                                <h5>Info Transaksi</h5>
+                                                                                <h5>Transaction Info</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Tanggal Transaksi</td>
+                                                                                            <td>Transaction Date</td>
                                                                                             <td>{{$histories->updated_at}}</td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
                                                                             <div class="line-detail">
-                                                                                <h5>Info Pengiriman</h5>
+                                                                                <h5>Shipping Info</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Nama</td>
+                                                                                            <td>Name</td>
                                                                                             <td class="bold-text">{{$histories->name}}</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Alamat</td>
+                                                                                            <td>Adress</td>
                                                                                             <td>{{$histories->adress}}</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Produk</td>
+                                                                                            <td>Product</td>
                                                                                             <td>{{$histories->product}}</td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
                                                                             <div class="line-detail">
-                                                                                <h5>Detail Pembayaran</h5>
+                                                                                <h5>Payment Details</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
@@ -223,7 +223,7 @@
                                                                                         <div
                                                                                             class="line-tracking number-tracking">
                                                                                             <p class="title-detail">No
-                                                                                                Resi</p>
+                                                                                                receipt</p>
                                                                                             <h4 class="bold-text">
                                                                                                 37463591974</h4>
                                                                                         </div>
@@ -236,13 +236,11 @@
                                                                                         <div class="line-tracking">
                                                                                             <p class="title-detail">
                                                                                                 Receiver</p>
-                                                                                            <h4 class="bold-text">Reksa
-                                                                                                Prayoga</h4>
+                                                                                            <h4 class="bold-text">Nono</h4>
                                                                                             <h4 class="address">Jl.
-                                                                                                Skip, Kec. Bogor Sel.,
+                                                                                                Sindangsari, Kec. Bogor Tim.,
                                                                                                 Kota Bogor, Jawa Barat,
-                                                                                                16134 [Note: rt01 rw01
-                                                                                                no47]</h4>
+                                                                                                16146 [Note: rt01 rw06]</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -266,7 +264,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                                 <p class="name-process">
-                                                                                                    Proces</p>
+                                                                                                    Process</p>
                                                                                             </div>
                                                                                             <div class="tracking">
                                                                                                 <div
@@ -320,7 +318,7 @@
                                                         <img src="./assets/img/icon/icon-history-transaksi.svg" alt="">
                                                     </div>
                                                     <div class="date">{{$histories->updated_at}}</div>
-                                                    <div class="status success">Selesai</div>
+                                                    <div class="status success">Done</div>
                                                 </div>
                                                 <div class="body-item">
                                                     <div class="image-item">
@@ -336,7 +334,7 @@
                                                                 <button type="button" class="button button-text"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#seeDetail2Modal{{$histories->id}}">
-                                                                    Lihat Detail
+                                                                    See Detail
                                                                 </button>
                                                             </div>
 
@@ -349,44 +347,44 @@
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
                                                                             <h5 class="modal-title"
-                                                                                id="seeDetailModalLabel">Detail Transaksi</h5>
+                                                                                id="seeDetailModalLabel">Transaction Detail</h5>
                                                                             <button type="button" class="btn-close"
                                                                                 data-bs-dismiss="modal"
                                                                                 aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body">
                                                                             <div class="line-detail">
-                                                                                <h5>Info Transaksi</h5>
+                                                                                <h5>Transaction Info</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Tanggal Transaksi</td>
+                                                                                            <td>Transaction Date</td>
                                                                                             <td>{{$histories->updated_at}}</td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
                                                                             <div class="line-detail">
-                                                                                <h5>Info Pengiriman</h5>
+                                                                                <h5>Shipping Info</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Nama</td>
+                                                                                            <td>Name</td>
                                                                                             <td class="bold-text">{{$histories->name}}</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Alamat</td>
+                                                                                            <td>Adress</td>
                                                                                             <td>{{$histories->adress}}</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Produk</td>
+                                                                                            <td>Product</td>
                                                                                             <td>{{$histories->product}}</td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
                                                                             <div class="line-detail">
-                                                                                <h5>Detail Pembayaran</h5>
+                                                                                <h5>Payment Details</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
@@ -427,7 +425,7 @@
                                                                                         <div
                                                                                             class="line-tracking number-tracking">
                                                                                             <p class="title-detail">No
-                                                                                                Resi</p>
+                                                                                                receipt</p>
                                                                                             <h4 class="bold-text">
                                                                                                 37463591974</h4>
                                                                                         </div>
@@ -440,13 +438,11 @@
                                                                                         <div class="line-tracking">
                                                                                             <p class="title-detail">
                                                                                                 Receiver</p>
-                                                                                            <h4 class="bold-text">Reksa
-                                                                                                Prayoga</h4>
+                                                                                            <h4 class="bold-text">Nono</h4>
                                                                                             <h4 class="address">Jl.
-                                                                                                Skip, Kec. Bogor Sel.,
+                                                                                                Sindangsari, Kec. Bogor Tim.,
                                                                                                 Kota Bogor, Jawa Barat,
-                                                                                                16134 [Note: rt01 rw01
-                                                                                                no47]</h4>
+                                                                                                16146 [Note: rt01 rw06]</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -470,7 +466,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                                 <p class="name-process">
-                                                                                                    Proces</p>
+                                                                                                    Process</p>
                                                                                             </div>
                                                                                             <div class="tracking">
                                                                                                 <div
@@ -567,44 +563,44 @@
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
                                                                             <h5 class="modal-title"
-                                                                                id="seeDetailModalLabel">Detail Transaksi</h5>
+                                                                                id="seeDetailModalLabel">Transaction Detail</h5>
                                                                             <button type="button" class="btn-close"
                                                                                 data-bs-dismiss="modal"
                                                                                 aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body">
                                                                             <div class="line-detail">
-                                                                                <h5>Info Transaksi</h5>
+                                                                                <h5>Transaction Info</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Tanggal Transaksi</td>
+                                                                                            <td>Transaction Date</td>
                                                                                             <td>{{$histories->updated_at}}</td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
                                                                             <div class="line-detail">
-                                                                                <h5>Info Pengiriman</h5>
+                                                                                <h5>Shipping Info</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Nama</td>
+                                                                                            <td>Name</td>
                                                                                             <td class="bold-text">{{$histories->name}}</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Alamat</td>
+                                                                                            <td>Adress</td>
                                                                                             <td>{{$histories->adress}}</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Produk</td>
+                                                                                            <td>Product</td>
                                                                                             <td>{{$histories->product}}</td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
                                                                             <div class="line-detail">
-                                                                                <h5>Detail Pembayaran</h5>
+                                                                                <h5>Payment Details</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
@@ -645,7 +641,7 @@
                                                                                         <div
                                                                                             class="line-tracking number-tracking">
                                                                                             <p class="title-detail">No
-                                                                                                Resi</p>
+                                                                                                receipt</p>
                                                                                             <h4 class="bold-text">
                                                                                                 37463591974</h4>
                                                                                         </div>
@@ -658,13 +654,11 @@
                                                                                         <div class="line-tracking">
                                                                                             <p class="title-detail">
                                                                                                 Receiver</p>
-                                                                                            <h4 class="bold-text">Reksa
-                                                                                                Prayoga</h4>
+                                                                                            <h4 class="bold-text">Nono</h4>
                                                                                             <h4 class="address">Jl.
-                                                                                                Skip, Kec. Bogor Sel.,
+                                                                                                Sindangsari, Kec. Bogor Tim.,
                                                                                                 Kota Bogor, Jawa Barat,
-                                                                                                16134 [Note: rt01 rw01
-                                                                                                no47]</h4>
+                                                                                                16146 [Note: rt01 rw06]</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -688,7 +682,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                                 <p class="name-process">
-                                                                                                    Proces</p>
+                                                                                                    Process</p>
                                                                                             </div>
                                                                                             <div class="tracking">
                                                                                                 <div
@@ -770,44 +764,44 @@
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
                                                                             <h5 class="modal-title"
-                                                                                id="seeDetailModalLabel">Detail Transaksi</h5>
+                                                                                id="seeDetailModalLabel">Transaction Detail</h5>
                                                                             <button type="button" class="btn-close"
                                                                                 data-bs-dismiss="modal"
                                                                                 aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body">
                                                                             <div class="line-detail">
-                                                                                <h5>Info Transaksi</h5>
+                                                                                <h5>Transaction Info</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Tanggal Transaksi</td>
+                                                                                            <td>Transaction Date</td>
                                                                                             <td>{{$histories->updated_at}}</td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
                                                                             <div class="line-detail">
-                                                                                <h5>Info Pengiriman</h5>
+                                                                                <h5>Shipping Info</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Nama</td>
+                                                                                            <td>Name</td>
                                                                                             <td class="bold-text">{{$histories->name}}</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Alamat</td>
+                                                                                            <td>Adress</td>
                                                                                             <td>{{$histories->adress}}</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Produk</td>
+                                                                                            <td>Product</td>
                                                                                             <td>{{$histories->product}}</td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
                                                                             <div class="line-detail">
-                                                                                <h5>Detail Pembayaran</h5>
+                                                                                <h5>Payment Details</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
@@ -848,7 +842,7 @@
                                                                                         <div
                                                                                             class="line-tracking number-tracking">
                                                                                             <p class="title-detail">No
-                                                                                                Resi</p>
+                                                                                                receipt</p>
                                                                                             <h4 class="bold-text">
                                                                                                 37463591974</h4>
                                                                                         </div>
@@ -861,13 +855,11 @@
                                                                                         <div class="line-tracking">
                                                                                             <p class="title-detail">
                                                                                                 Receiver</p>
-                                                                                            <h4 class="bold-text">Reksa
-                                                                                                Prayoga</h4>
+                                                                                            <h4 class="bold-text">Nono</h4>
                                                                                             <h4 class="address">Jl.
-                                                                                                Skip, Kec. Bogor Sel.,
+                                                                                                Sindangsari, Kec. Bogor Tim.,
                                                                                                 Kota Bogor, Jawa Barat,
-                                                                                                16134 [Note: rt01 rw01
-                                                                                                no47]</h4>
+                                                                                                16146 [Note: rt01 rw06]</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -891,7 +883,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                                 <p class="name-process">
-                                                                                                    Proces</p>
+                                                                                                    Process</p>
                                                                                             </div>
                                                                                             <div class="tracking">
                                                                                                 <div
@@ -973,44 +965,44 @@
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
                                                                             <h5 class="modal-title"
-                                                                                id="seeDetailModalLabel">Detail Transaksi</h5>
+                                                                                id="seeDetailModalLabel">Transaction Detail</h5>
                                                                             <button type="button" class="btn-close"
                                                                                 data-bs-dismiss="modal"
                                                                                 aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body">
                                                                             <div class="line-detail">
-                                                                                <h5>Info Transaksi</h5>
+                                                                                <h5>Transaction Info</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Tanggal Transaksi</td>
+                                                                                            <td>Transaction Date</td>
                                                                                             <td>{{$histories->updated_at}}</td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
                                                                             <div class="line-detail">
-                                                                                <h5>Info Pengiriman</h5>
+                                                                                <h5>Shipping Info</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Nama</td>
+                                                                                            <td>Name</td>
                                                                                             <td class="bold-text">{{$histories->name}}</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Alamat</td>
+                                                                                            <td>Adress</td>
                                                                                             <td>{{$histories->adress}}</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Produk</td>
+                                                                                            <td>Product</td>
                                                                                             <td>{{$histories->product}}</td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
                                                                             <div class="line-detail">
-                                                                                <h5>Detail Pembayaran</h5>
+                                                                                <h5>Payment Details</h5>
                                                                                 <table style="width: 100%;">
                                                                                     <tbody>
                                                                                         <tr>
@@ -1051,7 +1043,7 @@
                                                                                         <div
                                                                                             class="line-tracking number-tracking">
                                                                                             <p class="title-detail">No
-                                                                                                Resi</p>
+                                                                                                receipt</p>
                                                                                             <h4 class="bold-text">
                                                                                                 37463591974</h4>
                                                                                         </div>
@@ -1064,13 +1056,11 @@
                                                                                         <div class="line-tracking">
                                                                                             <p class="title-detail">
                                                                                                 Receiver</p>
-                                                                                            <h4 class="bold-text">Reksa
-                                                                                                Prayoga</h4>
+                                                                                            <h4 class="bold-text">Nono</h4>
                                                                                             <h4 class="address">Jl.
-                                                                                                Skip, Kec. Bogor Sel.,
+                                                                                                Sindangsari, Kec. Bogor Tim.,
                                                                                                 Kota Bogor, Jawa Barat,
-                                                                                                16134 [Note: rt01 rw01
-                                                                                                no47]</h4>
+                                                                                                16146 [Note: rt01 rw06]</h4>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1094,7 +1084,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                                 <p class="name-process">
-                                                                                                    Proces</p>
+                                                                                                    Process</p>
                                                                                             </div>
                                                                                             <div class="tracking">
                                                                                                 <div
