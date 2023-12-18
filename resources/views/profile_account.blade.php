@@ -82,8 +82,8 @@
                        <div class="col-12 col-lg-8 col-xl-9">
                            <div class="card profile-data">
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <button class="nav-link active" id="nav-profileData-tab" data-bs-toggle="tab" data-bs-target="#nav-profileData" type="button" role="tab" aria-controls="nav-profileData" aria-selected="true">Profil Setting</button>
-                                    <button class="nav-link" id="nav-securitySetting-tab" data-bs-toggle="tab" data-bs-target="#nav-securitySetting" type="button" role="tab" aria-controls="nav-securitySetting" aria-selected="false">Keamanan</button>
+                                    <button class="nav-link active" id="nav-profileData-tab" data-bs-toggle="tab" data-bs-target="#nav-profileData" type="button" role="tab" aria-controls="nav-profileData" aria-selected="true">Profile Setting</button>
+                                    <button class="nav-link" id="nav-securitySetting-tab" data-bs-toggle="tab" data-bs-target="#nav-securitySetting" type="button" role="tab" aria-controls="nav-securitySetting" aria-selected="false">Security</button>
                                 </div>
                                 <div class="tab-content" id="nav-tabContent">
                                     <div class="tab-pane fade show active" id="nav-profileData" role="tabpanel" aria-labelledby="nav-profileData-tab">

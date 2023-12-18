@@ -44,7 +44,17 @@ nav .slicing-color {
 }
 
 h1.text-logo {
-    color: #1a1d20;
+    color: #97aec4;
+}
+
+.carousel {
+    top: 100px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.carousel .carousel-item img{
+    border-radius: 15px;
 }
 
 .btn1 {
@@ -149,30 +159,35 @@ h1.text-logo {
 }
 
 .col-7 {
-    margin: 70px 0 0 0;
+    margin: 120px 0 0 0;
 }
 
 
 .col-7 h1 {
-    color: #424242;
+    color: #ffff;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 33px;
     font-family: "Poppins", sans-serif;
+    position: relative;
 }
 
 .col-7 h1 span {
-    color: #000000;
+    text-decoration: underline;
+    position: relative;
 }
 
 .col-7 p {
+    color: #ffff;
     margin: 20px 0 30px 0;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
+    position: relative;
 }
 
 .col-7 .flex-button-content1 {
     column-gap: 30px;
     display: flex;
+    position: relative;
 }
 
 .col-7 .flex-button-content1 .comic-button {
@@ -274,6 +289,42 @@ h1.text-logo {
     margin: -370px 0 0 360px;
     width: 35px;
 }
+
+.content1 .background1 {
+    width: 100%;
+    position: absolute;
+    height: 500px;
+    left: 0;
+    margin-top: 40px; 
+    z-index: 0;
+}
+
+.content1 .homepik {
+    position: relative;
+        top: 80px;
+        right: 20px;     
+} 
+
+/* .content1 h1 {
+    position: relative;
+    top: 50px;
+}
+
+.content1 p {
+    position: relative;
+        top: 50px;
+}
+
+.content1 .homepik {
+    position: relative;
+        top: 50px;
+        
+} 
+
+.content1 .flex-button-content1 {
+    position: relative;
+        top: 50px;
+}  */
 
 .content2 {
     display: flex;
@@ -409,6 +460,7 @@ div#content4 {
     color: #1a1d20;
 }
 
+
 .content4 .multiple-items .card {
     margin: 10px 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -492,7 +544,7 @@ a.product {
 }
 
 footer {
-    background-color: #629BBA;;
+    background-color: #629BBA;
     height: auto;
     padding: 10px 0;
     text-align: center;
@@ -583,7 +635,7 @@ footer .alamat {
 
     .col-5 img {
         width: 270px;
-        margin: 60px 0 0 0;
+        margin: 60 0 0 0;
     }
 
     .col-5 .komponen .c1 {

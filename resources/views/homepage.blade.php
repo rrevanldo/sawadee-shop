@@ -74,10 +74,34 @@
     <div style="background-color: #f6f7fb">
         <div class="container">
             <div class="row">
+            <div class="carousel slide" data-bs-ride="carousel" id="myCarousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.gmm-tv.com/shop/image/catalog/revslider_media_folder/NNN_SOU_Preorder-Banner_1130x400px-301123.jpg" style="border-radius:; 15px" class="d-block w-100" height="350px" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.gmm-tv.com/shop/image/catalog/revslider_media_folder/IMG_0927.jpg" style="border-radius:; 15px" class="d-block w-100" height="350px" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.gmm-tv.com/shop/image/catalog/revslider_media_folder/01t-shirt_starlympic_0.jpg" style="border-radius:; 15px" class="d-block w-100" height="350px" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev visually-hidden" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next visually-hidden" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
                 <div class="content1" id="content1">
+                <img src="assets/img/wave1.png" class="background1">
                     <div class="col-7">
                         <h1>
-                        Are you having trouble finding things? <span>Don't worry,</span> now you've found the solution!
+                        Are you having trouble finding things? <span>Calm down,</span> now you've found the solution!
                         </h1>
                         <p>Welcome to <b>SawadeeShop</b> the home of unlimited online shopping! Explore the widest range of quality products and options to fulfill all your needs, only here. Discover an unparalleled shopping experience with our excellent service and competitive prices. Enjoy your shopping journey!</p>
                         <div class="flex-button-content1">
@@ -108,7 +132,7 @@
                     </div>
                 </div> -->
 
-                <div class="content3" id="content3">
+                <!-- <div class="content3" id="content3">
                     <div class="flex-content3">
                         <div class="image-absolute">
                             <img class="circle-shapes1" src="assets/img/homepage/circle-shapes.png" width="200px"
@@ -129,7 +153,7 @@
                             <p>So, what are you waiting for? Let's go shopping at SawadeeShop to make your life much easier and practical, you will feel a shopping experience that will never be forgotten.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="content4" id="content4">
                     <h5>Product</h5>
@@ -142,7 +166,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{$product->name}}</h5>
                                 <p class="card-text">Rp. {{ number_format($product->price, 0, ',', '.') }}</p>
-                                <a href="{{route('detail.product', $product->id)}}" class="button2" style="color: black; width: 100%;"><button class="btn2"> Lihat Detail </button></a>
+                                <a href="{{route('detail.product', $product->id)}}" class="button2" style="color: black; width: 100%;"><button class="btn2"> See Details </button></a>
                             </div>
                         </div>
                         @endforeach
@@ -207,6 +231,8 @@
     <script src="assets/vendor/jquery/jquery.min.js"></script>
 
     <!--Bootstrap-->
+    <script src="{{asset('assets/js/carousel.js')}}"></script>
+
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/vendor/libs/popper/popper.js"></script>
