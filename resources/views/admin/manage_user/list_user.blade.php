@@ -26,10 +26,10 @@
                             <td>{{ $users->phone }}</td>
                             @if ($users->role == 'user')
                                 <td><span class="badge bg-label-success me-1">{{ $users->role }}</span></td>
-                            @else
-                                @if ($users->role == 'admin')
-                                    <td><span class="badge bg-label-primary me-1">{{ $users->role }}</span></td>
-                                @endif
+                            @elseif ($users->role == 'admin')
+                                <td><span class="badge bg-label-primary me-1">{{ $users->role }}</span></td>
+                            @elseif($users->role == 'kurir')
+                                <td><span class="badge bg-label-warning me-1">{{ $users->role }}</span></td>
                             @endif
                             <td>
                                 <form method="POST" action="{{ route('users.delete', $users->id) }}">

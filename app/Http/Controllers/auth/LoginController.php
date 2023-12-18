@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Http\Controllers\Controller;
+
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -33,6 +35,8 @@ class LoginController extends Controller
                 return redirect('/dashboard');
             } else if ($authenticatedUser->role === 'user') {
                 return redirect('/');
+            } else if ($authenticatedUser->role === 'kurir') {
+                return redirect('/dashboard-kurir');
             }
         }
 

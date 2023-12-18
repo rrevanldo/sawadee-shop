@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
+
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Checkout;
@@ -19,11 +21,11 @@ class AdminController extends Controller
         return view('admin.manage_user.list_user', compact('userData'))->with('i');
     }
 
-public function listOrder()
-{
-    $order = Checkout::with('user')->get();
-    return view('admin.order.list-order', compact('order'))->with('i');
-}
+    public function listOrder()
+    {
+        $order = Checkout::with('user')->get();
+        return view('admin.order.list-order', compact('order'))->with('i');
+    }
 
     public function detail_pembayaran($id){
         $bukti = Checkout::where('id', $id)->first();

@@ -12,8 +12,8 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Dashboard Admin SawadeeShop</title>
-    <link rel="icon" href="../../../assets/img/logoSS.png"">
+    <title>Dashboard Kurir SawadeeShop</title>
+    <link rel="icon" href="../../../assets/img/logoSS.png">
 
 
     <meta name="description" content="" />
@@ -57,7 +57,7 @@
               <h2 class="text-black fw-bolder ms-4"><img src="../../../assets/img/logoSS.png" width="150px"></h2>
             </a>
 
-            <a href="/dashboard" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+            <a href="/dashboard-kurir" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
               <i class="bx bx-chevron-left bx-sm align-middle"></i>
             </a>
           </div>
@@ -66,66 +66,66 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
-            <li class="menu-item {{ (request()->is('dashboard')) ? 'active' : '' }}" >
-              <a href="/dashboard" class="menu-link">
+            <li class="menu-item {{ (request()->is('dashboard-kurir')) ? 'active' : '' }}" >
+              <a href="/dashboard-kurir" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
             </li>
 
-            <li class="menu-header small text-uppercase">
+            {{-- <li class="menu-header small text-uppercase">
               <span class="menu-header-text">Product</span>
-            </li>
+            </li> --}}
 
-            <li class="menu-item {{ (request()->is('dashboard/product/create')) ? 'active' : '' }}" >
-              <a href="/dashboard/product/create" class="menu-link">
+            {{-- <li class="menu-item {{ (request()->is('dashboard-kurir/product/create')) ? 'active' : '' }}" >
+              <a href="/dashboard-kurir/product/create" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-plus"></i>
                 <div data-i18n="Basic">Add Products</div>
               </a>
-            </li>
+            </li> --}}
 
-            <li class="menu-item {{ (request()->is('dashboard/product')) ? 'active' : '' }}" >
-              <a href="/dashboard/product" class="menu-link">
+            {{-- <li class="menu-item {{ (request()->is('dashboard-kurir/product')) ? 'active' : '' }}" >
+              <a href="/dashboard-kurir/product" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Product List</div>
               </a>
-            </li>
+            </li> --}}
 
-            <!-- Components -->
+            {{-- <!-- Components -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">Category</span></li>
             <!-- Cards -->
-            <li class="menu-item {{ (request()->is('dashboard/category/create')) ? 'active' : '' }}" >
-              <a href="/dashboard/category/create" class="menu-link">
+            <li class="menu-item {{ (request()->is('dashboard-kurir/category/create')) ? 'active' : '' }}" >
+              <a href="/dashboard-kurir/category/create" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-plus"></i>
                 <div data-i18n="Basic">Add Categories</div>
               </a>
-            </li>
+            </li> --}}
 
-            <li class="menu-item {{ (request()->is('dashboard/category')) ? 'active' : '' }}" >
-              <a href="/dashboard/category" class="menu-link">
+            {{-- <li class="menu-item {{ (request()->is('dashboard-kurir/category')) ? 'active' : '' }}" >
+              <a href="/dashboard-kurir/category" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Categories List</div>
               </a>
-            </li>
+            </li> --}}
 
             <!-- Orders -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">Order</span></li>     
 
-            <li class="menu-item {{ (request()->is('dashboard/list-order')) ? 'active' : '' }}">
-              <a href="/dashboard/list-order" class="menu-link">
+            <li class="menu-item {{ (request()->is('dashboard-kurir/list-order')) ? 'active' : '' }}">
+              <a href="/dashboard-kurir/list-order" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Tables">Orders List</div>
               </a>
             </li>
 
             <!-- Users Data-->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">User Data</span></li>
-            <li class="menu-item {{ (request()->is('dashboard/users')) ? 'active' : '' }}" >
-              <a href="/dashboard/users" class="menu-link">
+            {{-- <li class="menu-header small text-uppercase"><span class="menu-header-text">User Data</span></li>
+            <li class="menu-item {{ (request()->is('dashboard-kurir/users')) ? 'active' : '' }}" >
+              <a href="/dashboard-kurir/users" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-archive"></i>
                 <div data-i18n="Tables">User List</div>
               </a>
-            </li>
+            </li> --}}
           </ul>
         </aside>
         <!-- / Menu -->

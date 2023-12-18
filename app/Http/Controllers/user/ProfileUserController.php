@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
@@ -68,5 +71,21 @@ class ProfileUserController extends Controller
         $user->save();
 
         return redirect('/profile')->with('successUploading', 'Profil berhasil diperbarui');
+    }
+
+    public function filterCategory($slug){
+        $products = Product::where('category_id', $slug)->get(); 
+        
+        $user = null;
+
+        if (Auth::check()) {
+            $user = User::find(Auth::user()->id);
+        }
+
+        $product = Product::all();
+        // $products = Product::with('category')->limit(5)->get();
+        $categories = Category::all();
+
+        return view('show_product', compact('user', 'products', 'categories', 'product', ));
     }
 }

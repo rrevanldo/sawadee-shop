@@ -58,7 +58,11 @@
                         <div class="col-12 col-lg-4 col-xl-3 mb-4 mb-lg-0">
                             <div class="card card-user-menu">
                                 <div class="user-detail">
+                                    @if (is_null($user['image_profile']))
                                     <img src="./assets/faces/1.jpg" alt="">
+                                    @else
+                                    <img src="{{asset('assets/img/' .Auth::user()->image_profile)}}" alt="" >
+                                    @endif
                                     <p class="name-user">{{Auth::user()->name}}</p>
                                 </div>
                                 <div class="menu-profile">

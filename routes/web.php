@@ -6,6 +6,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\auth\LoginController;
 use App\Http\Controllers\auth\RegisterController;
 
+// Kurir Controller 
+use App\Http\Controllers\kurir\KurirController;
+
 // Admin Controller 
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\admin\ManageCategoriesController;
@@ -35,7 +38,7 @@ Route::middleware('isGuest')->group(function () {
 });
 
 // ROLE USER 
-Route::middleware(['isLogin', 'CekRole:admin,user'])->group(function () {
+Route::middleware(['isLogin', 'CekRole:admin,user,kurir'])->group(function () {
     // CHANGE PROFILE
     Route::get('/profile', [ProfileUserController::class, 'profile'])->name('profile');
     Route::get('/profile/edit', [ProfileUserController::class, 'editProfile'])->name('profile.edit');
@@ -50,6 +53,17 @@ Route::middleware(['isLogin', 'CekRole:admin,user'])->group(function () {
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
     Route::patch('/history/penerimaan/{checkout:id}', [PagesController::class, 'penerimaan'])->name('penerimaan');
+});
+
+// ROLE KURIR
+Route::middleware(['isLogin', 'CekRole:kurir'])->prefix('/dashboard-kurir')->group(function () {
+    Route::get('/', [KurirController::class, 'index'])->name('index.kurir');
+
+     // LIST ORDER & DETAIL PEMBAYARAN
+     Route::get('/list-order', [KurirController::class, 'listOrder'])->name('list.order');
+     Route::get('/detailpembayaran/{checkout:id}', [KurirController::class, 'detail_pembayaran'])->name('detail.pembayaran');
+     Route::patch('/detailpembayaran/validasi/{checkout:id}', [KurirController::class, 'validasi'])->name('validasi');
+     Route::patch('/detailpembayaran/tolak/{checkout:id}', [KurirController::class, 'tolak'])->name('tolak');
 });
 
 
@@ -87,3 +101,5 @@ Route::middleware(['isLogin', 'CekRole:admin'])->prefix('/dashboard')->group(fun
         Route::patch('/detailpembayaran/validasi/{checkout:id}', [AdminController::class, 'validasi'])->name('validasi');
         Route::patch('/detailpembayaran/tolak/{checkout:id}', [AdminController::class, 'tolak'])->name('tolak');
 });
+
+Route::get('/profile/category/{slug}', [ProfileUserController::class, 'filterCategory']);

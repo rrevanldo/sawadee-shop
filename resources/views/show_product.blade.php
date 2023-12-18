@@ -9,17 +9,17 @@
     <link rel="icon" href="./assets/img/logoSS.png">
 
     <!--Bootstrap Css-->
-    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{asset('./assets/vendor/bootstrap/css/bootstrap.min.css')}}" />
 
     <!--Slick CSS-->
-    <link rel="stylesheet" href="./assets/vendor/slick/slick.css" />
-    <link rel="stylesheet" href="./assets/vendor/slick/slick-theme.css" />
+    <link rel="stylesheet" href="{{asset('./assets/vendor/slick/slick.css')}}" />
+    <link rel="stylesheet" href="{{asset('./assets/vendor/slick/slick-theme.css')}}" />
 
     <!--App Css-->
-    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="{{asset('./assets/css/app.css')}}" />
 
     <!--Main CSS-->
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="{{asset('./assets/css/main.css')}}" />
 </head>
 
 <body>
@@ -173,7 +173,7 @@
                         <div class="wrapperCategories row">
                             @foreach ($categories as $category)
                                 <div class="col-12 col-sm-6 col-md-3 col-lg-12">
-                                    <a href="#" class="categoriesPlant">
+                                    <a href="/profile/category/{{$category->id}}" class="categoriesPlant">
                                         <div class="imagesCategories">
                                             <img src="{{ asset('storage/images/' . $category->thumb_img) }}"
                                                 alt="">
@@ -194,7 +194,7 @@
                             <p class="ms-2">Product Recomendation</p>
                         </a>
                         <div class="bestOfferProduct">
-                            @if(count($products) >= 4)
+                            @if(count($products) >= 0)
                                 @foreach ($products as $bestProduct)
                                     <a href="{{ route('detail.product', $bestProduct->id) }}" class="product">
                                         <div class="imagesProduct">

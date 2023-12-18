@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Checkout;
@@ -59,7 +60,9 @@ class PagesController extends Controller
     public function historyTransaction()
     {
         $history = Checkout::all();
-        return view('history_transaction', compact('history'));
+        $user = User::where('id', Auth::user()->id)->first();
+        $user2 = User::all();
+        return view('history_transaction', compact('history', 'user', 'user2'));
     }
 
     public function penerimaan($id){
