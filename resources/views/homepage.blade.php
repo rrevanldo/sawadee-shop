@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SawadeeShop</title>
-    <link rel="icon" href="assets/img/homepage/logoSS.png">
+    <link rel="icon" href="assets/img/logoSS.png">
 
     <link rel="stylesheet" href="assets/css/homepage.css">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -56,12 +56,12 @@
                                         @if (is_null($user['image_profile']))
                                             <div class="avatar avatar-online">
                                                 <img src="../../assets/img/avatars/1.png" alt=""
-                                                    class="w-px-40 h-auto rounded-circle" style="margin-right: 20px;">
+                                                    class="w-px-40 h-auto rounded-circle">
                                             </div>
                                         @else
                                             <div class="avatar avatar-online">
                                                 <img src="{{ asset('assets/img/' . Auth::user()->image_profile) }}"
-                                                    alt="" class="w-px-40 h-auto rounded-circle" style="margin-right: 20px;">
+                                                    alt="" class="w-px-40 h-auto rounded-circle">
                                             </div>
                                         @endif
                                     </a>

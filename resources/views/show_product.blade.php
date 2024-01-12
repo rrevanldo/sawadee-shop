@@ -36,7 +36,7 @@
                     <div class="leftSideNavbar">
                         <div class="logo-brand">
                             <a href="{{ route('homepage') }}" class="text-black text-decoration-none">
-                                <h1 class="ps-3 pe-3"><img src="./assets/img/logoSS.png" width="150"></h1>
+                                <h1 class="ps-3 pe-3"><img src="{{asset('./assets/img/logoSS.png')}}" width="150"></h1>
                             </a>
                         </div>
                         <!-- <div class="searchMenu">
@@ -62,7 +62,7 @@
                                     <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
                                         @if (is_null($user['image_profile']))
                                             <div class="avatar avatar-online">
-                                                <img src="../../assets/img/avatars/1.png" alt=""
+                                                <img src="{{asset('../../assets/img/avatars/1.png')}}" alt=""
                                                     class="w-px-40 h-auto rounded-circle">
                                             </div>
                                         @else
@@ -132,7 +132,7 @@
 
                                 {{-- <div class="cartWrapper">
                                     <a href="/cart" class="cart icon">
-                                        <img src="./assets/img/icon/shopping-cart_icon.svg" alt="">
+                                        <img src="{{asset('./assets/img/icon/shopping-cart_icon.svg')}}" alt="">
                                         <div class="totalItem">0</div>
                                     </a>
                                 </div> --}}
@@ -153,7 +153,7 @@
 
                             <div class="cartWrapper">
                                 <a href="/cart" class="cart icon">
-                                    <img src="./assets/img/icon/shopping-cart_icon.svg" alt="" />
+                                    <img src="{{asset('./assets/img/icon/shopping-cart_icon.svg')}}" alt="" />
                                     <div class="totalItem" style="background-color: #629BBA; color: white;">0</div>
                                 </a>
                             </div>
@@ -190,7 +190,7 @@
                 <div class="col-12 col-lg-9">
                     <div class="bestOfferContainer">
                         <a href="#" class="header-line">
-                            <img src="./assets/img/icon/icons8-product-26.png" alt=""/>
+                            <img src="{{asset('./assets/img/icon/icons8-product-26.png')}}" alt=""/>
                             <p class="ms-2">Product Recomendation</p>
                         </a>
                         <div class="bestOfferProduct">

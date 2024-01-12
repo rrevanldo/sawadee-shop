@@ -65,6 +65,15 @@ nav .rightSideNavbar .icon img {
     max-width: 30px;
     max-height: 30px;
   }
+
+
+nav .rightSideNavbar .avatar img {
+    width: 100%;
+    max-width: 35px;
+    max-height: 35px;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
   
 /* nav .rightSideNavbar .cartWrapper {
     margin-left: 1.4rem;
