@@ -27,6 +27,7 @@ Route::get('/', [PagesController::class, 'index'])->name('homepage');
 Route::get('/show', [PagesController::class, 'showProduct'])->name('show.product');
 Route::get('/product/detail/{id}', [PagesController::class, 'detailProduct'])->name('detail.product');
 Route::get('/cart', [PagesController::class, 'cart'])->name('cart');
+Route::get('/show/category/{slug}', [PagesController::class, 'filterCategory']);
 
 // GUEST 
 Route::middleware('isGuest')->group(function () {
@@ -62,8 +63,7 @@ Route::middleware(['isLogin', 'CekRole:kurir'])->prefix('/dashboard-kurir')->gro
      // LIST ORDER & DETAIL PEMBAYARAN
      Route::get('/list-order', [KurirController::class, 'listOrder'])->name('list.order');
      Route::get('/detailpembayaran/{checkout:id}', [KurirController::class, 'detail_pembayaran'])->name('detail.pembayaran');
-     Route::patch('/detailpembayaran/validasi/{checkout:id}', [KurirController::class, 'validasi'])->name('validasi');
-     Route::patch('/detailpembayaran/tolak/{checkout:id}', [KurirController::class, 'tolak'])->name('tolak');
+     Route::patch('/detailpembayaran/pengiriman/{checkout:id}', [KurirController::class, 'pengiriman'])->name('pengiriman');
 });
 
 
@@ -101,5 +101,3 @@ Route::middleware(['isLogin', 'CekRole:admin'])->prefix('/dashboard')->group(fun
         Route::patch('/detailpembayaran/validasi/{checkout:id}', [AdminController::class, 'validasi'])->name('validasi');
         Route::patch('/detailpembayaran/tolak/{checkout:id}', [AdminController::class, 'tolak'])->name('tolak');
 });
-
-Route::get('/profile/category/{slug}', [ProfileUserController::class, 'filterCategory']);
