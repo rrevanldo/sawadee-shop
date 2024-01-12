@@ -115,4 +115,20 @@ class PagesController extends Controller
 
         return redirect('/history')->with('success', 'Pembayaran sedang di verifikasi, harap tuggu informasi selanjutnya');
     }
+
+    public function filterCategory($slug){
+        $products = Product::where('category_id', $slug)->get(); 
+        
+        $user = null;
+
+        if (Auth::check()) {
+            $user = User::find(Auth::user()->id);
+        }
+
+        $product = Product::all();
+        // $products = Product::with('category')->limit(5)->get();
+        $categories = Category::all();
+
+        return view('show_product', compact('user', 'products', 'categories', 'product', ));
+    }
 }

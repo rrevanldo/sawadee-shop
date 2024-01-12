@@ -173,7 +173,7 @@
                         <div class="wrapperCategories row">
                             @foreach ($categories as $category)
                                 <div class="col-12 col-sm-6 col-md-3 col-lg-12">
-                                    <a href="/profile/category/{{$category->id}}" class="categoriesPlant">
+                                    <a href="/show/category/{{$category->id}}" class="categoriesPlant">
                                         <div class="imagesCategories">
                                             <img src="{{ asset('storage/images/' . $category->thumb_img) }}"
                                                 alt="">

@@ -27,6 +27,7 @@ Route::get('/', [PagesController::class, 'index'])->name('homepage');
 Route::get('/show', [PagesController::class, 'showProduct'])->name('show.product');
 Route::get('/product/detail/{id}', [PagesController::class, 'detailProduct'])->name('detail.product');
 Route::get('/cart', [PagesController::class, 'cart'])->name('cart');
+Route::get('/show/category/{slug}', [PagesController::class, 'filterCategory']);
 
 // GUEST 
 Route::middleware('isGuest')->group(function () {
@@ -100,5 +101,3 @@ Route::middleware(['isLogin', 'CekRole:admin'])->prefix('/dashboard')->group(fun
         Route::patch('/detailpembayaran/validasi/{checkout:id}', [AdminController::class, 'validasi'])->name('validasi');
         Route::patch('/detailpembayaran/tolak/{checkout:id}', [AdminController::class, 'tolak'])->name('tolak');
 });
-
-Route::get('/profile/category/{slug}', [ProfileUserController::class, 'filterCategory']);
