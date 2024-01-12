@@ -62,8 +62,7 @@ Route::middleware(['isLogin', 'CekRole:kurir'])->prefix('/dashboard-kurir')->gro
      // LIST ORDER & DETAIL PEMBAYARAN
      Route::get('/list-order', [KurirController::class, 'listOrder'])->name('list.order');
      Route::get('/detailpembayaran/{checkout:id}', [KurirController::class, 'detail_pembayaran'])->name('detail.pembayaran');
-     Route::patch('/detailpembayaran/validasi/{checkout:id}', [KurirController::class, 'validasi'])->name('validasi');
-     Route::patch('/detailpembayaran/tolak/{checkout:id}', [KurirController::class, 'tolak'])->name('tolak');
+     Route::patch('/detailpembayaran/pengiriman/{checkout:id}', [KurirController::class, 'pengiriman'])->name('pengiriman');
 });
 
 

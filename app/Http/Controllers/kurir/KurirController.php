@@ -21,4 +21,12 @@ class KurirController extends Controller
         $order = Checkout::with('user')->get();
         return view('kurir.order.list-order', compact('order'))->with('i');
     }
+
+    public function Penerimaan($id){
+        Checkout::where('id', '=', $id)->update([
+            'status' => 3,
+              // 'done_time' => \Carbon\Carbon::now(),
+        ]);
+        return redirect()->back()->with('done', 'Permintaan Di tolak');
+    }
 }
