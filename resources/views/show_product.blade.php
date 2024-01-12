@@ -36,7 +36,7 @@
                     <div class="leftSideNavbar">
                         <div class="logo-brand">
                             <a href="{{ route('homepage') }}" class="text-black text-decoration-none">
-                                <h1 class="ps-3 pe-3"><img src="./assets/img/homepage/logoSS.png" width="150"></h1>
+                                <h1 class="ps-3 pe-3"><img src="./assets/img/logoSS.png" width="150"></h1>
                             </a>
                         </div>
                         <!-- <div class="searchMenu">

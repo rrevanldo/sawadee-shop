@@ -1233,10 +1233,10 @@ input[type="checkbox"]:focus {
   background-color: #ffeaef;
   color: #ef144a !important;
 }
-<<<<<<< HEAD
 
 
-/* Footer */
+
+/* Footer
 footer{
   background-color: #ffffff;
   margin-top: 5rem;
@@ -1410,7 +1410,4 @@ footer .wrapperCopy{
   footer .wrapperCopy p{
     font-size: 14px;
   }
-}
-=======
-/*# sourceMappingURL=app.css.map */
->>>>>>> f9290514c85b315d917023ee46b80e5f008e3891
+} */

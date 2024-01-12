@@ -46,26 +46,112 @@
                         <a class="nav-link" href="/show">Shop</a>
                     </li>
                 </ul>
-                <div class="slicing-color"></div>
-                @if (Route::has('login'))
-                    @auth
-                        <a class="button1 btn-light" href="{{ route('logout') }}">
-                            <button class="btn1 type1"><img src="assets/img/homepage/icons8-login-50.png" width="20" height="20">
-                            Logout</button>
-                        </a>
-                    @else
-                        <a class="button1 btn-light" href="/login">
-                        <button class="btn1 type1"><img src="assets/img/homepage/icons8-login-50.png" width="20" height="20">
-                            LogIn</button>
-                        </a>
-                        @if (Route::has('register'))
-                            <a class="button1 btn-light" href="/register">
-                            <button class="btn1 type1"><img src="assets/img/homepage/icons8-login-50.png" width="20" height="20">
-                                Daftar</button>
-                            </a>
+                <!-- <div class="slicing-color"></div> -->
+                <div class="rightSideNavbar">
+                        @if (Auth::check())
+                            <div class="afterLogin align-items-center">
+                                <li class="nav-item navbar-dropdown dropdown-user dropdown profileWrapper icon"
+                                    style="list-style: none;">
+                                    <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                        @if (is_null($user['image_profile']))
+                                            <div class="avatar avatar-online">
+                                                <img src="../../assets/img/avatars/1.png" alt=""
+                                                    class="w-px-40 h-auto rounded-circle" style="margin-right: 20px;">
+                                            </div>
+                                        @else
+                                            <div class="avatar avatar-online">
+                                                <img src="{{ asset('assets/img/' . Auth::user()->image_profile) }}"
+                                                    alt="" class="w-px-40 h-auto rounded-circle" style="margin-right: 20px;">
+                                            </div>
+                                        @endif
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-end hide-arrow">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="d-flex">
+                                                    <!-- <div class="flex-shrink-0 me-3">
+                                                        @if (is_null($user['image_profile']))
+                                                            <div class="avatar avatar-online">
+                                                                <img src="./assets/img/avatars/1.png" alt=""
+                                                                    class="w-px-40 h-auto rounded-circle">
+                                                            </div>
+                                                        @else
+                                                        <div class="avatar avatar-online">
+                                                                <img src="{{ asset('assets/img/' . Auth::user()->image_profile) }}"
+                                                                    alt="" class="w-px-40 h-auto rounded-circle">
+                                                            </div>
+                                                        @endif
+                                                    </div> -->
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="fw-semibold d-block">{{ Auth::user()->name }}</span>
+                                                        <small class="text-muted">{{ Auth::user()->role }}</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/profile">
+                                                <i class="bx bx-user me-2"></i>
+                                                <span class="align-middle">My Profile</span>
+                                            </a>
+                                        </li>
+                                        @if (Auth::check())
+                                            @if (Auth::user()->role == 'admin')
+                                                <li>
+                                                    <a class="dropdown-item" href="/dashboard">
+                                                        <i class="bx bx-user me-2"></i>
+                                                        <span class="align-middle">Admin Dashboard</span>
+                                                    </a>
+                                                </li>
+                                            @else
+                                            @endif
+                                        @endif
+                                        <li>
+                                            <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="{{ route('logout') }}">
+                                                <i class="bx bx-power-off me-2"></i>
+                                                <span class="align-middle">Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                {{-- <div class="cartWrapper">
+                                    <a href="/cart" class="cart icon">
+                                        <img src="./assets/img/icon/shopping-cart_icon.svg" alt="">
+                                        <div class="totalItem">0</div>
+                                    </a>
+                                </div> --}}
+                            </div>
                         @endif
-                    @endauth
-                @endif
+
+                        <div class="beforeLogin">
+                            <div class="buttonWrapper">
+                                @if (Route::has('login'))
+                                    @auth
+                                        <div></div>
+                                    @else
+                                        <a href="/login" class="button">Login</a>
+                                        <a href="/register" class="button" style="margin-right: 15px;">Register</a>
+                                    @endauth
+                                @endif
+                            </div>
+
+                            <div class="cartWrapper">
+                                <a href="/cart" class="cart icon">
+                                    <img src="./assets/img/icon/shopping-cart_icon.svg" alt="" />
+                                    <div class="totalItem" style="background-color: #629BBA; color: white;">0</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
         </div>

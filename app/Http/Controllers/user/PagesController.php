@@ -16,8 +16,12 @@ class PagesController extends Controller
     {
         $products = Product::all();
         $category = Category::all();
-        $user = User::all();
-        return view('homepage', compact('products', 'category', 'user'));
+        $user = user::all();
+
+        if (Auth::check()) {
+            $user = User::find(Auth::user()->id);
+        }
+        return view('homepage', compact('products', 'category', 'user' ));
     }
 
     public function showProduct()

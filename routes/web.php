@@ -51,7 +51,7 @@ Route::middleware(['isLogin', 'CekRole:admin,user,kurir'])->group(function () {
     Route::post('/pembayaran', [PagesController::class, 'pembayaran'])->name('pembayaran');
 
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-
+// 
     Route::patch('/history/penerimaan/{checkout:id}', [PagesController::class, 'penerimaan'])->name('penerimaan');
 });
 
