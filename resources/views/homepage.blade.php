@@ -163,13 +163,13 @@
             <div class="carousel slide" data-bs-ride="carousel" id="myCarousel">
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://www.gmm-tv.com/shop/image/catalog/revslider_media_folder/NNN_SOU_Preorder-Banner_1130x400px-301123.jpg" style="border-radius:; 15px" class="d-block w-100" height="350px" alt="...">
+                        <img src="./assets/img//homepage/banner3.png" style="border-radius:; 15px" class="d-block w-100" height="370px" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://www.gmm-tv.com/shop/image/catalog/revslider_media_folder/IMG_0927.jpg" style="border-radius:; 15px" class="d-block w-100" height="350px" alt="...">
+                        <img src="./assets/img//homepage/banner2.png" style="border-radius:; 15px" class="d-block w-100" height="370px" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://www.gmm-tv.com/shop/image/catalog/revslider_media_folder/01t-shirt_starlympic_0.jpg" style="border-radius:; 15px" class="d-block w-100" height="350px" alt="...">
+                        <img src="./assets/img//homepage/banner1.png" style="border-radius:; 15px" class="d-block w-100" height="370px" alt="...">
                     </div>
                     </div>
                     <button class="carousel-control-prev visually-hidden" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
