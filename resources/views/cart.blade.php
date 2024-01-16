@@ -40,9 +40,9 @@
                                         @auth
                                             <a href="{{route('logout')}}" class="button button btn-outline-info">Logout</a>
                                         @else
-                                            <a href="/login" class="button button btn-outline-info">Login</a>
+                                            <a href="/login" class="button" style="color: #629BBA;">Login</a>
                                             @if (Route::has('register'))
-                                            <a href="/register" class="button button btn-outline-info">Register</a>
+                                            <a href="/register" class="button" style="color: #629BBA;">Register</a>
                                             @endif
                                         @endauth
                                 @endif

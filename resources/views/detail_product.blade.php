@@ -127,8 +127,8 @@
                             <div class="beforeLogin">
                                 <div class="buttonWrapper">
                                     <a href="{{ route('login.page') }}"
-                                        class="button btn-outline-info">Login</a>
-                                    <a href="{{ route('register.page') }}" class="button btn-outline-info">Register</a>
+                                        class="button" style="color: #629BBA;">Login</a>
+                                    <a href="{{ route('register.page') }}" class="button" style="color: #629BBA;">Register</a>
                                 </div>
 
                                 <div class="cartWrapper">
