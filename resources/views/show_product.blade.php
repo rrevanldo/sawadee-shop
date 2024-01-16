@@ -145,8 +145,8 @@
                                     @auth
                                         <div></div>
                                     @else
-                                        <a href="/login" class="button btn-outline-info">Login</a>
-                                        <a href="/register" class="button btn-outline-info">Register</a>
+                                        <a href="/login" class="button" style="color: #629BBA;">Login</a>
+                                        <a href="/register" class="button" style="color: #629BBA;">Register</a>
                                     @endauth
                                 @endif
                             </div>

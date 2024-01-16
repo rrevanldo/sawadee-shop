@@ -592,6 +592,10 @@ div#content4 {
     color: #1a1d20;
 }
 
+.content5 .col-7 .content p{
+    color: #000;
+}
+
 .collapsible {
     background-color: #ffffff;
     color: rgb(0, 0, 0);

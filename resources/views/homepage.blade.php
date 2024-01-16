@@ -310,7 +310,7 @@
                 <img src="assets/img/homepage/telephone.svg" width="25px" style="margin-top: 12px;">
             </div>
         </div>
-        <p class="alamat">&copy; 2023 SawadeeShop. All Rights Reserved.</p>
+        <p class="alamat">&copy; SawadeeShop. All Rights Reserved.</p>
     </footer>
 
     <!--Jquery-->
