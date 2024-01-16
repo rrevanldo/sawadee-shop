@@ -109,7 +109,7 @@
                                             <div class="history-item">
                                                 <div class="head-item">
                                                     <div class="icon">
-                                                        <img src="./assets/img/icon/icon-history-transaksi.svg" alt="">
+                                                        <img src="{{asset('./assets/img/icon/icons8-product-26.png')}}" alt="">
                                                     </div>
                                                     <div class="date">{{$histories->updated_at}}</div>
                                                     @if($histories['status'] == 1)
@@ -319,7 +319,7 @@
                                             <div class="history-item">
                                                 <div class="head-item">
                                                     <div class="icon">
-                                                        <img src="./assets/img/icon/icon-history-transaksi.svg" alt="">
+                                                        <img src="{{asset('./assets/img/icon/icons8-product-26.png')}}" alt="">
                                                     </div>
                                                     <div class="date">{{$histories->updated_at}}</div>
                                                     <div class="status success">Done</div>
@@ -520,7 +520,7 @@
                                             <div class="history-item">
                                                 <div class="head-item">
                                                     <div class="icon">
-                                                        <img src="./assets/img/icon/icon-history-transaksi.svg" alt="">
+                                                        <img src="{{asset('./assets/img/icon/icons8-product-26.png')}}" alt="">
                                                     </div>
                                                     <div class="date">{{$histories->updated_at}}</div>
                                                     <div class="alert alert-warning" role="alert" style="margin: 0 5px 0 0; padding: 5px 5px;">Pesanan sedang diantar</div>
@@ -736,7 +736,7 @@
                                             <div class="history-item">
                                                 <div class="head-item">
                                                     <div class="icon">
-                                                        <img src="./assets/img/icon/icon-history-transaksi.svg" alt="">
+                                                        <img src="{{asset('./assets/img/icon/icons8-product-26.png')}}" alt="">
                                                     </div>
                                                     <div class="date">{{$histories->updated_at}}</div>
                                                     <div class="alert alert-secondary" role="alert" style="margin: 0 5px 0 0; padding: 5px 5px;">Proses</div>
@@ -937,7 +937,7 @@
                                             <div class="history-item">
                                                 <div class="head-item">
                                                     <div class="icon">
-                                                        <img src="./assets/img/icon/icon-history-transaksi.svg" alt="">
+                                                        <img src="{{asset('./assets/img/icon/icons8-product-26.png')}}" alt="">
                                                     </div>
                                                     <div class="date">{{$histories->updated_at}}</div>
                                                     <div class="status danger">Gagal</div>
