@@ -6,9 +6,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\auth\LoginController;
 use App\Http\Controllers\auth\RegisterController;
 
-// Kurir Controller 
-use App\Http\Controllers\kurir\KurirController;
-
 // Admin Controller 
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\admin\ManageCategoriesController;
@@ -52,18 +49,8 @@ Route::middleware(['isLogin', 'CekRole:admin,user,kurir'])->group(function () {
     Route::post('/pembayaran', [PagesController::class, 'pembayaran'])->name('pembayaran');
 
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-// 
+
     Route::patch('/history/penerimaan/{checkout:id}', [PagesController::class, 'penerimaan'])->name('penerimaan');
-});
-
-// ROLE KURIR
-Route::middleware(['isLogin', 'CekRole:kurir'])->prefix('/dashboard-kurir')->group(function () {
-    Route::get('/', [KurirController::class, 'index'])->name('index.kurir');
-
-     // LIST ORDER & DETAIL PEMBAYARAN
-     Route::get('/list-order', [KurirController::class, 'listOrder'])->name('list.order');
-     Route::get('/detailpembayaran/{checkout:id}', [KurirController::class, 'detail_pembayaran'])->name('detail.pembayaran');
-     Route::patch('/detailpembayaran/pengiriman/{checkout:id}', [KurirController::class, 'pengiriman'])->name('pengiriman');
 });
 
 
