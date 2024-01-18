@@ -35,8 +35,6 @@ class LoginController extends Controller
                 return redirect('/dashboard');
             } else if ($authenticatedUser->role === 'user') {
                 return redirect('/');
-            } else if ($authenticatedUser->role === 'kurir') {
-                return redirect('/dashboard-kurir');
             }
         }
 
