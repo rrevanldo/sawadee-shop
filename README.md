@@ -14,6 +14,7 @@ Cara Menginstall
 
 Penjelasan Fitur yang ada :
 
+1. ini adalah halaman landing page, dimana saat pertamakali mengakses website SawadeeShop akan langsung otomatis ke halaman ini
 ![Screenshot (615)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/2ccbe179-aae5-4768-be17-58732c04e3e0)
 ![Screenshot (616)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/6a77dc4b-410d-4243-95f6-76b10a1bb3f5)
 ![Screenshot (617)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/cf25c219-8ff6-4254-852f-1207f01804a1)
