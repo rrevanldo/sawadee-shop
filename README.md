@@ -1,7 +1,7 @@
 Cara Menginstall 
 
 1. Buka CMD / PowerShell
-2. Ketik git clone https://github.com/rrevanldo/12108722-Revan-Rionaldo-Paket-2
+2. Ketik git clone https://github.com/rrevanldo/sawadee-shop
 3. Setelah selesai pindah direktori ke projek yang sudah diclone
 4. Ketik perintah composer install / update (gunakan --ignore-platform-reqs)
 5. Rename file .env.example jadi .env
