@@ -44,17 +44,45 @@ Penjelasan Fitur yang ada :
 
 10. Lalu terakhir di dashboard admin, disini admin bisa melihat semua user/pengguna yang telah mengakses SawadeeShop, admin juga bisa menghapus pengguna tersebut jika diperlukan
 ![Screenshot (624)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/e6e2314f-feac-407d-8002-4723ca5e90e6)
+
+11. Selanjutnya mari kita coba simulasi untuk checkout dari halaman shop ini, sebelum melakukan checkout pengguna bisa melihat-lihat dan memilih barang yang pengguna inginkan
 ![Screenshot (625)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/04bd12f8-aa0f-4302-894e-b02de4118f45)
+
+12. Lalu ketika pengguna menginginkan suatu barang tersebut, pengguna bisa langsung saja menekan barang yang prngguna inginkan, dan langsung akan diarahkan ke detail barang seperti pada halaman berikut ini 
 ![Screenshot (626)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/fa2b2e5c-c8a4-44cd-a50a-acf99990ac7e)
+
+13. Jika memang tertarik ingin membeli produk ini, pengguna bisa langsung memasukkan produk/barang ini ke keranjang, nantinya akan langsung ada muncul alert yang menunjukkan bahwa produk/barang berhasil dimasukkan ke keranjang 
 ![Screenshot (627)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/179b766f-2de3-4488-a15f-cef7d3d8b392)
+
+14. Pada halaman keranjan, pengguna bisa melihat semua produk yang sudah dimasukkan ke keranjang, dan pengguna bisa langsung check out pada keranjang tersebut 
 ![Screenshot (628)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/0a7b5ac5-f648-4936-bcc7-0ea0c7bf2b88)
+
+15. Namun, jika pengguna ingin langsung checkout semua barang yang dia inginkan di keranjang, maka pengguna bisa langsung klik bagian select all
 ![Screenshot (629)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/3aab69de-ece5-432e-805b-a7fceaf427ae)
+
+16. Setelah pengguna menekan tombol checkout, maka pengguna akan langsung diarahkan ke halaman ini, dimana pengguna bisa mengecek terlebih dahulu apakah sudah benar informasi data diri dari pengguna tersebut, jika belum benar maka pengguna juga bisa mengubahnya, namun jika dirasa sudah benar pengguna bisa langsung menekan tombol confirm
 ![Screenshot (630)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/672c1e08-f269-477b-a2bb-53fb0346bb73)
+
+17. Selanjutnya, pengguna akan langsung diarahkan ke halaman pembayaran ini, disini pengguna akan melihat jumlah total yang harus ia bayar,l 
 ![Screenshot (631)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/d6b0ddad-fe1b-46a9-b3c8-089d1b54f839)
+
+18. Dan pengguna bisa memilih ingin bayar menggunakan apa pada tombol choose payment method, disini kita coba pilih untuk transfer 
 ![Screenshot (632)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/f3346650-5a05-4d6f-a5cd-765d70cee402)
+
+19. Jika pengguna memilih transfer, maka akan langsung diarahkan ke halaman berikut ini, sudah ada tatacara bagaimana mentransfer di halaman ini, dan pengguna hanya perlu menyisipkan bukti transfer jika sudah melakukan transaksi 
 ![Screenshot (633)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/b154e2f5-094c-4402-b15a-c288b9f20b20)
+
+20. Setelah itu, pengguna bisa melihat semua pesanan yang ia pesan pada halaman profile bagian transaction histor
 ![Screenshot (634)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/f7a0dbdf-469e-4538-b9da-cc543c8f1563)
+
+21. Lalu, kembali ke dashboard admin disini orderan tadi bisa admin terima ataupun tolak, sebagai contoh maka kita coba dua-duanya 
 ![Screenshot (635)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/0fe59b72-03a1-4519-966b-3e0a3baf83b7)
+
+22. Nah, kalau kita kembali ke halaman pengguna, dan kita mengakses kembali ke halaman transaction history, maka kita bisa melihat perbedaan disini, dimana orderan yang diterima oleh admin akan langsung berubah status menjadi on delivery, sedangkan yang ditolak akan langsung muncul keterangan berwarna merah yang bertuliskan gagal
 ![Screenshot (636)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/69ac3461-e405-4702-b25d-df32065de7a7)
+
+23. Jika produk/barang sudah diterima oleh pengguna, maka pengguna bisa langsung mengkonfirmasi penerimaan di halaman bagain confirm acceptance
 ![Screenshot (637)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/e81b42d3-54cd-446f-bedf-614b998b8869)
+
+24. Setelah itu, jika sudah maka status barang akan berubah menjadi warna hijau yang bertuliskan selesai, tandanya bahwa barang sudah ada ditangan pengguna 
 ![Screenshot (638)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/ef89d2a5-5447-4829-852c-338f1426b399)
