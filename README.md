@@ -14,19 +14,35 @@ Cara Menginstall
 
 Penjelasan Fitur yang ada :
 
-1. Ini adalah halaman landing page, dimana saat pertamakali mengakses website SawadeeShop akan langsung otomatis ke halaman ini
+1. Ini adalah halaman landing page, dimana saat pertamakali mengakses website SawadeeShop akan langsung otomatis ke halaman ini. Sebelum memiliki akun, Kalian bisa menekan tombol login/register lalu nanti akan diarahkan ke halaman login/register page
 ![Screenshot (615)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/2ccbe179-aae5-4768-be17-58732c04e3e0)
 
 2. Halaman ini adalah halaman login/register page, dimana kita bisa membuat atau masuk ke akun yang kita akan gunakan untuk transaksi di SawadeeShop
 ![Screenshot (616)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/6a77dc4b-410d-4243-95f6-76b10a1bb3f5)
 ![Screenshot (617)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/cf25c219-8ff6-4254-852f-1207f01804a1)
+
+3. Setelah pengguna membuat atau masuk ke akun yang diinginkan, pengguna akan langsung diarahkan kembali ke landing page, dan tampilan navbar yang terdapat di landing page akan sedikit berubah
 ![Screenshot (639)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/3773044d-ae05-439e-b5ec-7c575de28cf6)
+
+4. Pada halaman ini, jika pengguna login sebagai admin, maka pengguna akan bisa langsung mengakses bagian dashboard admin, dimana banyak hal yang bisa dilakukan disini
 ![Screenshot (618)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/99c5c59a-114f-48ad-9245-8cff05b28d08)
+
+5. Admin bisa menambahkan produk, dimana produk ini nanti akan langsung muncul di produk list jika admin sudah mengisi semua yang ada di halamab add products 
 ![Screenshot (619)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/40e886eb-b322-4d1d-b979-b9c43cc80911)
+
+6. Setelah mengisi di halaman add products, nantinya produk/barang yang tadi sudah ditambahkan akan langsung masuk kedalam halaman ini, kita bisa melihat semua barang-barang yang sudah dimasukkan oleh admin
 ![Screenshot (620)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/877237ef-e3b4-4eaf-aa29-c414ef1c76eb)
+
+7. Namun sebelum membuat produk, alangkah baiknya admin membuat kategori terlebih dahulu pada halaman ini, admin hanya perlu menambahkan thumbnail dan juga nama untuk kategori yang akan dibuat
 ![Screenshot (621)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/af35546c-139c-4ddb-9373-ee4cdc04adb4)
+
+8. Lalu selanjutnya kategori akan muncul pada halaman ini, dan admin bisa melihat juga mengedit kategori yang ada pada halaman ini
 ![Screenshot (622)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/3963c917-4e2f-4fe9-b594-b129d5b2317d)
+
+9. Ini adalah halaman dimana admin bisa melihat semua orderan yang masuk dari pelanggan SawadeeShop, admin bisa melihat detail barang/produk apa yang dibeli oleh pelanggan, dan juga tugas admin disini adalah menerima/menolak pesanan yang dibeli pelanggan
 ![Screenshot (623)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/b973c2ac-1486-4fe8-850c-5bc4ca930055)
+
+10. Lalu terakhir di dashboard admin, disini admin bisa melihat semua user/pengguna yang telah mengakses SawadeeShop, admin juga bisa menghapus pengguna tersebut jika diperlukan
 ![Screenshot (624)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/e6e2314f-feac-407d-8002-4723ca5e90e6)
 ![Screenshot (625)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/04bd12f8-aa0f-4302-894e-b02de4118f45)
 ![Screenshot (626)](https://github.com/rrevanldo/sawadee-shop/assets/91299304/fa2b2e5c-c8a4-44cd-a50a-acf99990ac7e)
